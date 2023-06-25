@@ -1,0 +1,1549 @@
+=~=~=~=~=~=~=~=~=~=~=~= MobaXterm log 2023.06.24 12:18:24 =~=~=~=~=~=~=~=~=~=~=~=
+[    0.000000] Linux version 5.10.100-gdf8cc6fd8285-dirty (nobody@android-build) (Android (7141649, based on r412851) clang version 12.0.3 (https://android.googlesource.com/toolchain/llvm-project 756ad17abf0622fecdd08ec40f71c5f25829a0bc), LLD 12.0.3 (/buildbot/src/android/llvm-toolchain/out/llvm-project/lld 756ad17abf0622fecdd08ec40f71c5f25829a0bc)) #18 SMP PREEMPT Sat Jun 24 17:36:02 CST 2023
+[    0.000000] Command line: androidboot.boottime=FWS:7598,LIS:22445,VBS:1807,SKS:9426 androidboot.slot_suffix=_a rootwait ro init=/init androidboot.acpio_idx=0  androidboot.acpi_idx=  androidboot.force_normal_boot=1 androidboot.bootloader=5_11_kernelflinger-07_02-userdebug androidboot.boot_devices=pci0000:00/80860F14:00 androidboot.verifiedbootstate=yellow androidboot.bootreason=unknown androidboot.serialno=Default0string g_ffs.iSerialNumber=Default0string rootfstype=ext4 gpt loglevel=7 androidboot.hardware=caas firmware_class.path=/vendor/firmware intel_pstate=passive snd-hda-intel.model=dell-headset-multi enforcing=0 androidboot.selinux=permissive no_timer_check noxsaves reboot_panic=p,w i915.hpd_sense_invert=0x7 intel_iommu=off i915.enable_pvmmio=0 loop.max_part=7 vga=current i915.modeset=1 drm.atomic=1 i915.nuclear_pageflip=1 drm.vblankoffdelay=1 i915.fastboot=1 console=ttyUSB0,115200 i915.enable_guc=2 console=ttyS0,115200n8 buildvariant=userdebug  androidboot.vbmeta.device=PARTUUID=a
+[    0.000000] x86/fpu: x87 FPU will use FXSAVE
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000008efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000008f000-0x000000000008ffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000000090000-0x000000000009dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001effffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001f000000-0x00000000201fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020200000-0x000000007b035fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007b036000-0x000000007b065fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007b066000-0x000000007b185fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007b186000-0x000000007b716fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007b717000-0x000000007ba38fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007ba39000-0x000000007bffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000e3ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fea00000-0x00000000feafffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed01000-0x00000000fed01fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed03000-0x00000000fed03fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed06000-0x00000000fed06fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed08000-0x00000000fed09fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1cfff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed80000-0x00000000fedbffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ffb80000-0x00000000ffffffff] reserved
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.40 by American Megatrends
+[    0.000000] efi: ESRT=0x7b064000 ACPI=0x7b186000 ACPI 2.0=0x7b186000 SMBIOS=0x7b8d4000 SMBIOS 3.0=0x7b8d3000 
+[    0.000000] SMBIOS 3.0.0 present.
+[    0.000000] DMI: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/13/2016
+[    0.000000] tsc: Detected 1440.000 MHz processor
+[    0.000082] last_pfn = 0x7c000 max_arch_pfn = 0x400000000
+[    0.000328] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.000663] total RAM covered: 1988M
+[    0.002189] Found optimal setting for mtrr clean up
+[    0.002195]  gran_size: 64K chunk_size: 64M num_reg: 5  lose cover RAM: 0G
+[    0.011114] esrt: ESRT header is not in the memory map.
+[    0.011149] check: Scanning 1 areas for low memory corruption
+[    0.013029] Secure boot could not be determined
+[    0.01303[    5.225009] usbcore: register[    6.349118] axp20x-i2c i2c-INT33F4:00: AXP20x variant AXP288 [    6.358282] printk: console [ttyUSB0] enabled
+[    6.429067] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 16 -> VIRQ 139
+[    6.462048] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 17 -> VIRQ 140
+[    6.495053] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 18 -> VIRQ 141
+[    6.528051] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 19 -> VIRQ 142
+[    6.544883] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #80!!!
+[    6.553906] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #40!!!
+[    6.561062] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 24 -> VIRQ 147
+[    6.596039] axp288_fuel_gauge axp288_fuel_gauge: HW IRQ 25 -> VIRQ 148
+[    6.686688] axp20x-i2c i2c-INT33F4:00: AXP20X driver loaded
+[    6.706798] i915 0000:00:02.0: [drm] Incompatible option enable_guc=2 - GuC is not supported!
+[    6.716427] i915 0000:00:02.0: [drm] Incompatible option enable_guc=2 - HuC is not supported!
+[    6.726667] fb0: switching to i915 from EFI VGA
+[    6.739704] i915 0000:00:02.0: [drm] Using SoC PWM for LCD backlight control
+[    6.758957] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #280!!!
+[    6.778233] [drm] Initialized i915 1.6.0 20201103 for 0000:00:02.0 on minor 0
+[    6.795310] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[    6.810369] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input2
+[    6.821286] i915 0000:00:02.0: [drm] HDaudio controller not dmtected, using LPE audio instead
+[    6.832300] PM:   Magic number: 11:872:255
+[    6.837332] acpi BMGY0160:00: hash matches
+[    6.842089] printk: console [netcon0] enabled
+[    6.845311] mmc2: SDHCI controller on ACPI [80860F14:01] using ADMA
+[    6.846980] netconsole: network logging started
+[    6.859458] input: gpio-keys as /devices/platform/INTCFD9:00/gpio-keys.1.auto/input/input3
+[    6.869119] input: gpio-keys as /devices/platform/INTCFD9:00/gpio-keys.2.auto/input/input4
+[    6.878915] ALSA device list:
+[    6.882247]   No soundcards found.
+[    6.983063] i915 0000:00:02.0: [drm] fb0: i915 frame buffer device
+[    7.020731] Freeing unused kernel image (initmem) memory: 1712K
+[    7.027616] Write protecting the kernel read-only data: 59392k
+[    7.036533] Freeing unused kernel image (text/rodata gap) memory: 2036K
+[    7.045300] Freeing unused kernel image (rodata/data gap) memory: 1440K
+[    7.052981] Run /init as init process
+[    7.087567] init: init first stage started!
+[    7.092438] init: Unable to open /lib/modules, skipping module loading.
+[    7.100150] init: Switching root to '/first_stage_ramdisk'
+[    7.106766] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[    7.116113] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    7.165222] init: HandleUevent found partition: vbmeta_a
+[    7.171765] init: found platform device pci0000:00/80860F14:00: No such file or directory
+[    7.180962] init:  is_boot_device: 1: No such file or directory
+[    7.189198] init: HandleUevent found partition: metadata
+[    7.195555] init: found platform device pci0000:00/80860F14:00: No such file or directory
+[    7.226229] EXT4-fs (mmcblk1p6): VFS: Can't find ext4 filesystem
+[    7.235960] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #80!!!
+[    7.254414] device-mapper: verity: sha1 using implementation "sha1-ssse3"
+[    7.270958] EXT4-fs (dm-4): mounted filesystem without journal. Opts: barrier=1
+[    7.291634] device-mapper: verity: sha1 using implementation "sha1-ssse3"
+[    7.311620] EXT4-fs (dm-5): mounted filesystem without journal. Opts: barrier=1
+[    7.322076] device-mapper: verity: sha1 using implementation "sha1-ssse3"
+[    7.337696] EXT4-fs (dm-6): mounted filesystem without journal. Opts: barrier=1
+[    7.348130] device-mapper: verity: sha1 using implementation "sha1-ssse3"
+[    7.360723] EXT4-fs (dm-7): mounted filesystem without journal. Opts: barrier=1
+[    7.402000] printk: init: 37 output lines suppressed due to ratelimiting
+[    7.856011] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #80!!!
+[    7.878062] init: DM_DEV_STATUS failed for system_ext_a: No such device or address
+[    7.886750] init: Could not update logical partition
+[    7.892538] init: Loading SELinux policy
+[    7.996298] SELinux:  Permission nlmsg_getneigh in class netlink_route_socket not defined in policy.
+[    8.006684] SELinux:  Permission!perfmon in(class capability2 not defined in policy.
+[    8.015382] SELinux:  Permission bpf in class capability2 not defined in policy.
+[    8.023688] SELinux:  Permission checkpoint_restore in class capability2 not defined in policy.
+[    8.033454] SELinux:  Permission perfmon in class cap2_userns not defined in policy.
+[    8.042146] SELinux:  Permission bpf in class cap2_userns not defined in policy.
+[    8.050458] SELinux:  Permission checkpoint_restore in class cap2_userns not defined in policy.
+[    8.060294] SELinux:  Class anon_inode not defined in policy.
+[    8.066737] SELinux: the above unknown classes and permissions will be denied
+[    8.081953] SELinux:  policy capability network_peer_controls=1
+[    8.088630] SELinux:  policy capabiliy open_perms=1
+[    8.094210] SELinux:  policy capability extended_socket_class=1
+[    8.100852] SELinux:  policy capability always_check_network=0
+[    8.101056] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #40!!!
+[    8.107387] SELinux:  policy capability cgroup_seclabel=0
+[    8.122402] SELinux:  policy capability nnp_nosuid_transition=1
+[    8.129044] SELinux:  policy capability genfs_seclabel_symlinks=0
+[    8.232949] audit: type=1403 audit(1686705482.127:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+[    8.233076] selinux: SELinux: Loaded policy from /odm/etc/selinux/precompiled_sepolicy
+[    8.252633] selinux: 
+[    8.279431] selinux: SELinux: Loaded file_contexts
+[    8.284858] selinux: 
+[    8.329394] init: init second stage started!
+[    8.370901] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    8.392147] init: Couldn't load property file '/factory/factory.prop': open() failed: No such file or directory: No such file or directory
+[    8.408546] init: Setting product property ro.product.brand to 'intel' (from ro.product.product.brand)
+[!   8.419033] init: Setting product property ro.product.device to 'caas' (from ro.product.product.device)
+[    8.419156] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #40!!!*[   $8.429597] init: Setting product property ro.product.manufacturer to 'Intel' (from ro.product.product.manufacturer)
+[    8.438821] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #40!!!
+[    8.450354] init:`Setting product property ro.product.model to 'AOSP on Intel Platform' (from ro.product.product.model)
+[    8.471370] init: Setting product property ro.product.name to 'caas' (from ro.product.product.name)
+[    8.481550] init:!Setting property 'ro.build.fingerprint' to 'intel/caas/caas:11/RQ3A.211001.001/eng.nmsl.20230612.184251:userdebug/test-keys'
+[    8.498272] selinux: SELinux: Loaded file_contexts
+[    8.601874] NOHZ tick-stop error: Non-RCU local softirq work is pending, handler #80!!!
+[   "8.608464] cgroup: Unknown subsys name 'blkio'
+[    8.620650] cgroup: Unknown subsys ncme 'schedtune'
+[    8.629174] audit: type=1400 audit(1686705482.523:3): avc:  denied  { perfmon } for  pid=1 comm="init" capability=38  scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability2 permissive=1
+[    8.710077] ueventd: ueventd started!
+[    8.717393] selinux: SELinux: Loaded file_contexts
+[    8.722808] selinux: 
+[    8.725597] ueventd: Parsing file /system/etc/ueventd.rc...
+[    8.733158] ueventd: Parsing file /vendor/ueventd.rc...
+[    8.740283] ueventd: Parsing file /odm/ueventd.rc...
+[    8.745922] ueventd: Unable to rgad config file '/odm/ueventd.rc': open() failed: No such file or directory
+[    8.756888] ueventd: Parsing file /ueventd.caas.rc...
+[    8.762595] ueventd: Unable to read config file '/ueventd.caas.rc': open() failed: No such file or directory
+[    8.788767] apexd: Bootstrap subcommand detected
+[    9.018999] ueventd: found platform device pci0000:00/80860F14:00: No such file or directory
+[    9.087199] apexd: wait for '/dev/loop-control' took 198ms
+[    9.185486] apexd: Pre-allocated 26 loopback devices
+[    9.191124] apexd: Scanning /system/apex for preinstalled data
+[    9.203955] apexd: Scanning /system_ext/apex for preinstalled data
+[    9.210949] apexd: ... does not exist. Skipping
+[    9.216056] apexd: Scanning /vendor/apex for preinstalled data
+[    9.222633] apexd: ... does not exist. Skipping
+[    9.227749] apexd: Scanning /system/apex looking for APEX packages.
+[    9.234999] apexd: Found /system/apex/com.android.extservices.apex
+[    9.270795] EXT4-fs (loop0): mounted filesystem without journal. Opts: (null)
+[    9.292237] EXT4-fs (loop1): mounted filesystem without journal. Opts: (null)
+[    9.307614] EXT4-fs (loop2): mounted filesystem without journal. Opts: (null)
+[    9.324160] EXT4-fs (loop3): mounted filesystem without journal. Opts: (null)
+[    9.341992] EXT4-fs (loop4): mounted filesystem without journal. Opts: (null)
+[    9.358091] EXT4-fs (loop5): mounted filesystem without journal. Opts: (null)
+[    9.375093] printk: apexd: 81 output lines suppressed due to ratelimiting
+[   10.345076] logd.auditd: start
+[   10.348610] logd.klogd: 8527218522
+[   10.383462] mke2fs: mke2fs 1.45.4 (23-Sep-2019)
+[   10.421057] mke2fs: Discarding device blocks:          done                            
+[   10.431006] mke2fs: Creating filesystem with 4096 4k blocks and 4096 inodes
+[   10.438871] mke2fs: 
+[   10.441353] mke2fs: Allocating group tables: 0/1   done                            
+[   10.450546] mke2fs: Writing inode tables: 0/1   done                            
+[   10.483053] mke2fs: Creating journal (1024 blocks): done
+[   10.493283] mke2fs: Writing superblocks and filesystem accounting information: 0/1   done
+[   10.500794] brd: module loaded
+[   10.503127] mke2fs: 
+[   10.538521] e2fsdroid: Created filesystem with 11/4096 inodes and 1161/4096 blocks
+[   10.550523]`EXT4-fs (mmcblk1p6): Ignoring removed nomblk_io_submit option
+[   10.562873] EXT4-fs (mmcblk1p6): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   10.574768] ext4 filesystem being mounted at /metadata supports timestamps until 2038 (0x7fffffff)
+["  10.628996] EXT4-fs (mmcblk1p6): mounted filesystem with ordered data mode. Opts: errors=panic,discard
+[   10.639511] ext4 filesystem being mounted at /metadata supports timestamps until 2038 (0x7fffffff)
+[   10.650014] Failed to create system directory dwc3
+[   10.655518] Failed to create system directory dwc3
+[   10.661025] Failed to create system directory dwc3
+[   10.666511] Failed to create system directory dwc3
+[   10.672119] Failed to create system directory dwc3
+[   10.677707] Failed to create system directory dwc3
+[   10.683289] Failed to create system directory dwc3
+[   10.688890] Failed to create system directory dwc3
+[   10.692435] EXT4-fs (mmcblk1p17): mounted filesystem with ordered data mode. Opts: errors=panic
+[   10.694526] Failed to create system directory dwc3
+[   10.704382] ext4 filesystem being mounted at /mnt/vendor/oem_config supports timestamps until 2038 (0x7fffffff)
+[   10.709515] Failed to create system directory dwc3
+[   10.726228] Failed to create system directory dwc3
+[   10.731806] Failed to create system directory dwc3
+[   10.738419] Failed to create system directory dwc3
+[   10.744020] Failed to create system directory dwc3
+[   10.749462] Failed to create system directory dwc3
+[   10.770028] 9pnet_virtio: no channels available for device aaf
+[   11.449852] type=1400 audit(1686705485.343:4): avc: denied { read } for comm="logcat" name="/" dev="mmcblk1p6" ino=2 scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=1
+[   11.470757] type=1400 audit(1686705485.343:5): avc: denied { open } for comm="logcat" path="/metadata" dev="mmcblk1p6" ino=2 scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=1
+[   11.492096] type=1400 audit(1686705485.344:6): avc: denied { search } for comm="logcat" name="/" dev="mmcblk1p6" ino=2 scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=1
+[   11.512815] type=1400 audit(1686705485.344:7): avc: denied { write } for comm="logcXr"/" dev="mmcblk1p6" ino=2 scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=1
+[   11.513078] Bluetooth: Core ver 2.22
+[   11.533357] type=1400 audit(1686705485.344:8): avc: denied { add_name } for comm="logcat" name="logcat.log" scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=1
+[   11.538476] NET: Registered protocol family 31
+[   11.556874] type=1400 audit(1686705485.346:9): avc: denied { create } for comm="logcat" name="logcat.log" scontext=u:r:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=file permissive=1
+[   11.561731] Bluetooth: HCI device and connection manager initialized
+[   11.561745] Bluetooth: HCI socket layer initialized
+[   11.581222] type=1400 audit(1686705485.346:10): avc: denied { append open } for comm="logcat" path="/metadata/logcat.log" dev="mmcblk1p6" ino=20 scontext=u:s:logpersist:s0 tcontext=u:object_r:metadata_file:s0 tclass=file permissive=1
+[   11.588225] Bluetooth: L2CAP socket layer initialized
+[   11.622560] Bluetooth: SCO socket layer initialized
+[   11.658934] usbcore: registered new interface driver btusb
+[   11.667681] usbcore: registered new interface driver btusb_sco
+[   11.844235] stmmac: Unknown symbol xpcs_config_eee (err -2)
+[   11.851256] stmmac: Unknown symbol xpcs_get_an_mode (err -2)
+[   11.857791] stmmac: Unknown symbol xpcs_validate (err -2)
+[   11.864046] stmmac: Unknown symbol xpcs_create (err -2)
+[   11.869942] stmmac: Unknown symbol xpcs_destroy (err -2)
+[   12.042154] wait_for_keymaster: Waiting for Keymaster device
+[   12.098976] HidlServiceManagement: getService: Trying again for android.hardware.keymaster@3.0:;IKeymasterDevice/default...
+[   12.194178] wait_for_keymaster: List of Keymaster HALs found:
+[   12.201048] wait_for_keymaster: Keymaster HAL #1: SoftwareKeymasterDevice from Google SecurityLevel: SOFTWARE HAL: android.hardware.keymaster@3.0::IKeymasterDevice/default
+[   12.218676] wait_for_keymaster: Using SoftwareKeymasterDevice from Google for encryption.  Security level: SOFTWARE, HAL: android.hardware.keymaster@3.0::IKeymasterDevice/default
+[   12.236554] wait_for_keymaster: Keymaster device ready
+[   12.293868] vdc: Command: checkpoint restoreCheckpoint /dev/block/by-name/userdata Failed: Status(-8, EX_SERVICE_SPECIFIC): '22: No magic'
+[   12.354046] device-mapper: table: 252:8: dm_table_destroy: dm_pt_device call missing for 179:10
+[   38.827984] mke2fs: Discarding device blocks:    4096/5469184 528384/54691x41052672/54691841576960/54691842101248/54691842625536/54691:43149824/54691843674112/54691844198400/54691844722688/54691845246976/5469184               done                            
+[   38.871312] mke2fs: Creating filesystem with 5469184 4k blocks and 1368064 inodes
+[   38.879798] mke2fs: Filesystem UUID: 83d5616e-ed67-477f-8075-c91877a96f04
+[   38.887481] mke2fs: Superblock backups stored on blocks: 
+[   38.893590] mke2fs: 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+[   38.903192] mke2fs: 4096000
+[   38.906466] mke2fs: 
+[   38.908962] mke2fs: Allocating group tables:   0/167       done                            
+[   38.919712] mke2fs: Writing inode tables:   0/167       done  $                         
+[   41.261185] mke2fs: Creating journal (32768 blocks): done
+[   41.352662] init: Calling: /system/bin/vdc checkpoint restoreCheckpoint /dev/block/by-name/userdata
+[   41.389302] vdc: Command: checkpoint restoreCheckpoint /dev/block/by-name/userdata Failed: Status(-8, EX_SERVICE_SPECIFIC): '22: No magic'
+[   41.405129] vdc: vdc terminated by exit(25)
+[   41.409861] vdc: 
+[   41.412188] init: vdc call failed with error code: 25
+[   41.417958] init: /dev/block/by-name/userdata is not dm device: No such file or directory
+[   41.436539] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-8
+[   41.444977] init: [libfs_mgr]Enabling quotas on /dev/block/dm-8
+[   41.516595] EXT4-fs (dm-8): Ignoring removed nomblk_io_submit option
+[   41.530721] EXT4-fs (dm-8): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   41.542252] init: [libfs_mgr]check_fs(): mount(/dev/block/dm-8,/data,ext4+=0: Success
+[   41.557769] init: [libfs_mgr]check_fs(): unmount(/data) succeeded
+[   41.564814] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/dm-8
+[   41.945616] EXT4-fs (dm-8): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,errors=panic
+[   48.361265] EXT4-fs (dm-9): Ignoring removed nomblk_io_submit option
+[   48.377541] EXT4-fs (dm-9): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   48.413117] e2fsck: e2fsck 1.45.4 (23-Sep-2019)
+[   48.431745] e2fsck: /dev/block/dm-9: clean, 11/1368064 files, 118648/5469184 blocks[   48.444642] init: Unable to set property 'ro.boottime.init.fsck.data' from uid:0 gid:0 pid:211: Read-only property was already set
+[   48.465726] EXT4-fs (dm-9): mounted filesystem with ordered data mode. Opts: noauto_da_alloc,errors=panic
+[   48.477125] init: Unable to set property 'ro.boottime.init.mount.data' from uid:0 gid:0 pid:211: Read-only property was already set
+[   48.507567] init: Keyring created with id 340394065 in process 1
+[   48.515543] init: Command 'mount_all /vendor/etc/fstab.${ro.hardware} --late' action=late-fs (/vendor/etc/init/hw/init.caas.rc:32) took 36267ms and succeeded
+[   48.533238] init: prosessing action (post-fs-data) from (/system/etc/init/hw/init.rc:528)
+[   48.542794] init: starting service 'exec 6 (/system/bin/vdc checkpoint prepareCheckpoint)'...
+[   48.554750] init: SVC_EXEC service 'exec 6 (/system/bin/vdc checkpoint prepareCheckpoint)' pid 322 (uid 1000 gid 1000+0 context default) started; waiting...
+[   48.623531] device-mapper: bow: Switching to state Checkpoint
+[   48.649352] init: Service 'exec 6 (/sys|em/bin/vdc checkpoint prepareCheckpoint)' (pid 322) exited with status 0 waiting took 0.095000 seconds
+[   48.663744] init: Sending signal 9 to service 'exec 6 (/system/bin/vdc checkpoint prepareCheckpoint)' (pid 322) procss group...
+[   48.676961] libprocessgroup: Successfully killed process cgroup uid 1000 pid 322 in 0ms
+[   49.204047] fscrypt: AES-256-CTS-CBC using implementation "cts(cbc-aes-aesni)"
+[   49.227016] fscrypt: AES/256-XTS using implementation "xts-aes-aesni"
+[   49.256227] apexd: Scanning /system/apex for preinstalled data
+[   49.269160] apexd: Scanning /system_ext/apex for preinstalled data
+[   49.276191] apexd: ... does not exist. Skipping
+[   49.281316] apexd: Scanning /product/apex for preinstalled data
+[   49.287997] apexd: ... does not exist. Skipping
+[   49.293111] apexd: Scanning /vendor/apex for preinstalled data
+[   49.299712] apexd: ... does not exist. Skipping
+[   49.304850] apexd: Populating APEX database from mounts...
+[   49.311636] apexd: 0 packages restored.
+[   49.316237] apexd: Marking APEXd as starting
+[   49.349684] EXT4-fs (loop6): mounted filesystem without journal. Opts: (null)
+[   49.366465] EXT4-fs (loop7): mounted filesystem without journal. Opts: (null)
+[   49.397489] EXT4-fs (loop8): mounted filesystem without journal. Opts: (null)
+[   49.414189] EXT4-fs (loop9): mounted filesystem without journal. Opts: (null)
+[   49.431142] EXT4-fs (loop10): mounted filesystem without journal. Opts: (null)
+[   49.455778] EXT4-fs (loop11): mounted filesystem without journal. Opts: (null)
+[   49.471820] EXT4-fs (loop12): mounted filesystem without journal. Opts: (null)
+[   49.487314] EXT4-fs (loop13): mounted filesystem without journal. Opts: (null)
+[   49.503606] EXT4-fs (loop14): mounted filesystem without journal. Opts: (null)
+[   49.519607] EXT4-fs (loop15): mounted filesystem without journal. Opts: (null)
+[   49.548792] EXT4-fs (loop16): mounted filesystem without journal. Opts: (null)
+[   49.566233] EXT4-fs (loop17): mounted filesystem without journal. Opts: (null)
+[   49.581896] EXT4-fs (loop18): mounted filesystem without journal. Opts: (null)
+[   49.597413] EXT4-fs (loop19): mounted filesystem without journal. Opts: (null)
+[   49.621937] EXT4-fs (loop20): mounted filesystem without journal. Opts: (null)
+[   49.643686] EXT4-fs (loop21): mounted filesystem withowt journal. Opts: (null)
+[   49.659964] EXT4-fs (loop22): mounted filesystem without journal. Opts: (null)
+[   49.676113] EXT4-fs (lop23): mounted filesystem without journal. Opts: (null)
+[   49.704450] EXT4-fs (loop24): mounted filesystem without journal. Opts: (null)
+[   49.721742] EXT4-fs (loop25): mounted filesystem without journal. Opts: (null)
+[   53.243585] apexd: Snapshot DE subcommand detected
+[   53.250384] apexd: Marking APEXd as ready
+[   53.468400] init: Service 'exec 10 (/system/bin/tzdatacheck /apex/com.android.tzdata/etc/tz /fata/misc/zoneinfo)' (pid 380) exited with status 0 waiting took 0.033000 seconds
+[   53.485919] init: Sending signal 9 to service 'exec 10 (/system/bin/tzdatacheck /apex/com.android.tzdata/etc/tz /data/misc/zoneinfo)' (pid 380) process group...
+[   53.502235] libprocessgroup: Successfully killed process cgroup uid 1000 pid 380 in 0ms
+[   53.512759] init: processing action (post-fs-data) from (/system/etc/init/hw/init.usb.rc:6)
+[   53.524814] init: Encryption policy of /data/adb set to 31b1d4f89c67fb4dc872451baad85e3d v2 modes 1/4 flags 0x2
+[   53.536318] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.caas.rc:36)
+[   53.547005] type=1400 audit(1686705527.440:14): avc: denied { search } for comm="init" name="wifi" dev="dm-9" ino=835609 scontext=u:r:vendor_init:s0 tcontext=u:object_r:wifi_data_file:s0 tclass=dir permissive=1
+[   53.548912] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.caas.rc:110)
+[   53.580260] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.caas.rc:118)
+[   53.590505] type=1400 audit(1686705527.484:15): avc: denied { getattr } for comm="init" path="/data/misc/dhcp" dev="dm-9" ino=83u613 sconext=u:r:vendor_init:s0 tcontext=u:object_r:dhcp_data_file:s0 tclass=dir permissive=1
+[   53.590661] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.caas.rc:137)
+[   53.612976] type=1400 audit(1686705527.484:16): avc: denied { setattr } for comm="i~it" name="dhcp" dev="dm-9" ino=835613 scontext=u:r:vendor_init:s0 tcontext=u:object_r:dhcp_data_file:s0 tclass=dir permissive=1
+[   53.622621] init: Top-level directory needs encryption action, eg mkdir /data/kpanic <mode> <uid> <gid> encryption=Require
+[   53.657977] init: Encryption policy of /data/kpaZ,to 31b1d4f89c67fb4dc872451baad85e3d v2 modes 1/4 flags 0x2
+[   53.672090] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.caas.rc:212)
+[   53.682270] init: Top-level directory needs encryption action, eg mkdir /data/system <mode> <uid> <gid> encryption=Require
+[   53.695209] init: Verified that /data/system has the encryption policy 31b1d4f89c67fb4dc872451baad85e3d v2 modes 1/4 flags 0x2
+[   53.710777] init: Top-level directory needs encryption action, eg mkdir /data/system <mode> <uid> <gid> encryption=Require
+[   53.723597] init: Verified that /data/system has the encryption policy 31b1d4f89c67fb4dc872451baad85e3d v2 modes 1/4 flags 0x2
+[   55.749486] logd.daemon: reinit
+[   55.961752] update_verifier: Started with arg 1: nonencrypted
+[   55.971518] update_verifier: Booting slot 0: isSlotMarkedSuccessful=0
+[   55.978940] update_verifier: /data/ota_package/care_map.pb doesn't exist
+[   55.986493] update_verifier: Failed to parse the care map file, skipping verification
+[   55.996423] update_verifier: Deferred marking slot 0 as booted successfully.
+[   56.004391] update_verifier: Leaving update_verifier.
+[   56.142873] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   56.152791] cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[   56.152960] type=1400 audit(1686705530.046:17): avc: denied { write"} for comm="init" scontext=u:r:vendor_init:s0 tcontext=u:r:vendor_init:s0 tclass=key permissive=1
+[   56.160332] plXKregulatory.0: Direct firmware load for regulatory.db failed with error -2
+[   56.186424] platform regulatory.0: Falling back to sysfs fallback for: regulatory.db
+[   56.198711] ueventd: firmware: loading 'regulatory.db' for '/devices/platform/regulatory.0/firmware/regulatory.db'
+[   56.211070] ueventd: firmware: could not find firmware for regulatory.db
+[   56.218738] ueventd: firmware: attempted /etc/firmware/regulatory.db, open failed: No such file or directory
+[   56.229837] ueventd: firmware: attempted /odm/firmware/regulatory.db, open failed: No such file or directory
+[   56.241003] ueventd: firmware: attempted /vendor/firmware/regulatory.db, open failed: No such file or directory
+[   56.252366] ueventd: firmware: attempted /firmware/image/regulatory.db, open failed: No such file or directory
+[   56.263762] ueventd: loading /devices/platform/regulatory.0/firmware/regulatory.db took 65ms
+[   56.263810] cfg80211: failed to load regulatory.db
+[   56.280930] Intel(R) Wireless WiFi driver for Linux
+[   56.309110] iwlmvm: Unknown symbol wiphy_to_ieee80211_hw (err -2)
+[   56.316005] iwlmvm: Unknown symbol ieee80211_register_hw (err -2)
+[   56.322873] iwlmvm: Unknown symbol ieee80211_tx_dequeue (err -2)
+[   56.329625] iwlmvm: Unknown symbol ieee80211_iterate_interfaces (err -2)
+[   56.337496] iwlmvm: Unknown symbol ieee80211_iterate_active_interfaces_atomic (err -2)
+[   56.346457] iwlmvm: Unknown symbol ieee80211_sta_ps_transition (err -2)
+[   56.353916] iwlmvm: Unknown symbol ieee80211_sta_uapsd_trigger (err -2)
+[   56.361712] iwlmvm: Unknown symbol ieee80211_sta_pspoll (err -2)
+[   56.368941] iwlmvm: Unknown symbol ieee80211_free_txskb (err -2)
+[   56.375915] iwlmvm: Unknown symbol ieee80211_remain_on_channel_expired (err -2)
+[   56.384173] iwlmvm: Unknown symbol ieee80211_wake_queues (err -2)
+[   56.391073] iwlmvm: Unknown symbol ieee80211_update_mu_groups (err -2)
+[   56.398442] iwlmvm: Unknown symbol ieee80211_sta_set_buffered (err -2)
+[   56.405897] iwlmvm: Unknown symbol ieee80211_chswitch_done (err -2)
+[   56.412996] iwlmvm: Unknown symbol ieee80211_get_key_rx_seq (err -2)
+[   56.420168] iwlmvm: Unknown symbol ieee80211_reserve_tid (err -2)
+[   56.427035] iwlmvm: Unknown symbol ieee80211_unreserve_tid (err -2)
+[   56.434145] iwlmvm: Unknown symbol ieee80211_vif_to_wdev (err -2)
+[   56.441183] iwlmvm: Unknown symbol ieee80211_restart_hw (err -2)
+[   56.448053] iwlmvm: Unknown symbol ieee80211_free_hw (err -2)
+[   56.454549] iwlmvm: Unknown symbol ieee80211_alloc_hw_nm (err -2)
+[   56.461476] iwlmvm: Unknown symbol ieee80211_unregister_hw (err -2)
+[   56.468570] iwlmvm: Unknown symbol ieee80211_stop_queues (err -2)
+[   56.475536] iwlmvm: Unknown symbol ieee80211_beacon_get_template (err -2)
+[   56.483168] iwlmvm: Unknown symbol ieee80211_beacon_loss (err -2)
+[   56.490023] iwlmvm: Unknown symbol ieee80211_rx_napi (err -2)
+[   56.496512] iwlmvm: Unknown symbol ieee80211_beacon_set_cntdwn (err -2)
+[   56.503985] iwlmvm: Unknown symbol ieee80211_csa_finish (err -2)
+[   56.510772] iwlmvm: Unknown symbol ieee80211_beacon_cntdwn_is_complete (err -2)
+[   56.518991] iwlmvm: Unknown symbol ieee80211_beacon_update_cntdwn (err -2)
+[   56.526755] iwlmvm: Unknown symbol ieee80211_request_smps (err -2)
+[   56.533704] iwlmvm: Unknown symbol ieee80211_connection_loss (err -2)
+[   56.540992] iwlmvm: Unknown symbol ieee80211_find_sta_by_ifaddr (err -2)
+[   56.548546] iwlmvm: Unknown symbol ieee80211_mark_rx_ba_filtered_frames (err -2)
+[   56.556895] iwlmvm: Unknown symbol ieee80211_cqm_rssi_notify (err -2)
+[   56.564165] iwlmvm: Unknown symbol ieee80211_stop_rx_ba_session (err -2)
+[   56.571739] iwlmvm: Unknown symbol ieee80211_tkip_add_iv (err -2)
+[   56.578596] iwlmvm: Unknown symbol ieee80211_get_tkip_p2k (err -2)
+[   56.585570] iwlmvm: Unknown symbol ieee80211_tx_status (err -2)
+[   56.592256] iwlmvm: Unknown symbol ZYYY}}(err -2)
+[   56.599810] iwlmvm: Unknown symbol ieee80211_sta_eosp (err -2)
+[   56.606398] iwlmvm: Unknown symbol ieee80211_start_tx_ba_cb_irqsafe (err -2)
+[   56.614343] iwlmvm: Unknown symbol ieee80211_stop_tx_ba_cb_irqsafe (err -2)
+[   56.622184] iwlmvm: Unknown symbol ieee80211_sta_block_awake (err -2)
+[   56.629491] iwlmvm: Unknown symbol ieee80211_rx_ba_timer_expired (err -2)
+[   56.637154] iwlmvm: Unknown symbol ieee80211_get_tkip_rx_p1k (err -2)
+[   56.644424] iwlmvm: Unknown symbol ieee80211_sched_scan_results (err -2)
+[   56.651976] iwlmvm: Unknown symbol ieee80211_sched_scan_stopped (err -2)
+[   56.659534] iwlmvm: Unknown symbol ieee80211_scan_completed (err -2)
+[   56.666735] iwlmvm: Unknown symbol ieee80211_ready_on_channel (err -2)
+[   56.674140] iwlmvm: Unknown symbol ieee80211_rate_control_register (err -2)
+[   56.682009] iwlmvm: Unknown symbol ieee80211_rate_control_unregister (err -2)
+[   56.690073] iwlmvm: Unknown symbol ieee80211_iterate_stations_atomic (err -2)
+[   56.698115] iwlmvm: Unknown symbol ieee80211_start_tx_ba_session (err -2)
+[   56.705778] iwlmvm: Unknown symbol ieee80211_stop_tx_ba_session (err -2)
+[   56.713379] iwlmvm: Unknown symbol ieee80211_tdls_oper_request (err -2)
+[   56.720906] iwlmvm: Unknown symbol ieee80211_find_sta (err -2)
+[   56.727536] iwlmvm: Unknown symbol ieee80211_iter_keys (err -2)
+[   56.734255] iwlmvm: Unknown symbol __ieee80211_get_radio_led_name (err -2)
+[   56.742086] iwlmvm: Unknown symbol ieee80211_get_tkip_p1k_iv (err -2)
+[   56.749379] iwlmvm: Unknown symbol ieee80211_iterate_active_interfaces_rtnl (err -2)
+[   56.758118] iwlmvm: Unknown symbol ieee80211_report_wowlan_wakeup (err -2)
+[   56.765889] iwlmvm: Unknown symbol ieee80211_gtk_rekey_add (err -2)
+[   56.772964] iwlmvm: Unknown symbol ieee80211_gtk_rekey_notify (err -2)
+[   56.780332] iwlmvm: Unknown symbol ieee80211_remove_key (err -2)
+[   56.787113] iwlmvm: Unknown symbol ieee80211_set_key_rx_seq (err -2)
+[   56.794282] iwlmvm: Unknown symbol ieee80211_resume_disconnect (err -2)
+[   57.106878] type=1400 audit(1686705530.993:18): avc: denied { write } for comm="android.hardwar" name="brightness" dev="sysfs" ino=24811 scontext=u:r:hal_light_default:s0 tcontext=u:object_r:sysfs_app_readable:s0 tclass=file permissive=1
+[   57.148147] type=1400 audit(1686705530.994:19): avc: denied { read } for comm="android.hardwar" name="max_brightness" dev="sysfs" ino=24813 scontext=u:r:hal_light_default:s0 tcontext=u:object_r:sysfs_app_readable:s0 tclass=file permissive=1
+[   57.154413] healthd: BatteryTemperaturePath not found
+[   57.160060] android.hardware.health@2.1-impn.intel: healthd connect failed
+[   57.160106] android.hardware.health@2.1-impl.intel: Exiting healthd recv loop...
+[   57.174093] type=1400 audit(1686705530.995:20): avc: denied { read } for comm="android.hardwar" name="u:object_r:system_prop:s0" dev="tmpfs" ino=193 sconteWr:hal_light_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+[   57.186159] healthd: BatteryCycleCountPath not found
+[   57.194926] type=1400 audit(1686705530.995:21): avc: denied { open } for comm="android.hardwar" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=193 scontext=u:r:hal_light_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissmve=1
+[   57.217948] healthd: batteryCapacityLevelPath not found
+[   57.217960] healthd: batteryChargeTimeToFullNowPath. not found
+[   57.223814] type=1400 audit(1686705530.995:22): avc: denied { getattr } for comm="android.hardwar" path="/dev/__properties__/u:object_r:system_prop:s0" dev="tmpfs" ino=193 scontext=u:r:hal_light_default:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=1
+[   57.253121] healthd: batteryFullChargeDesignCapacityUahPath. not found
+[   57.299038] HealthLoop: StartLoop calle...
+[   57.304641] HealthLoop: InitInternal called...
+[   57.319130] file system registered
+[   57.338292] healthd: battery l=1 v=3678 t=0.0 h=2 st=3 c=-256000 fc=3498768 chg=
+[   57.343713] using random self ethernet address
+[   57.352502] using random host ethernet address
+[   57.852295] zram0: detected capacity change from 0 to 1073741824
+[   57.892811] mkswap: Swapspace size: 1048572k, UUID=6d23448b-08af-419f-8dbb-306eb21fe197
+[   57.910924] Adding 1048572k swap on /dev/block/zram0.  Priority:-2 extents:1 across:1048572k SS
+[   61.664135] init: starting service 'vendor.media.omx'...
+[   61.675344] init: Could not start service 'vendor_flash_recovery' as part of class 'main': Cannot find '/vendor/bin/install-recovery.sh': No such file or directory
+[   61.693096] init: starting service 'media.swcodec'...
+[   61.703953] init: Command 'class_start main' action=nonencrypted (/system/etc/init/hw/init.rc:942) took 3740ms and succeeded
+[   61.717022] init: Service 'exec 18 (/system/bin/bootstat --set_system_boot_reason)' (pid 488) exited with status 0 oneshot service took 3.773000 seconds in background
+[   61.734544] init: Sending signal 9 to service 'exec 18 (/system/bin/bootstat --set_system_boot_reason)' (pid 488) process group...
+[   61.748566] libprocessgroup: Successfully killed process cgroup uid 1000 pid 488 in 0ms
+[   61.758477] init: starting service 'mdnsd'...
+[   61.764437] init: Created socket '/dev/socket/mdnsd', mode 660, user 1020, group 3003
+[   61.778059] init: Control message: Processed ctl.start for 'mdnsd' from pid: 487 (/apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0)
+[   62.311940] type=1107 audit(1686705536.205:49): uid=0 auid=4294967295 4294967295 subj=u:r:init:s0 msg='avc: denied { set } for property=persist.vendor.service.apklogfs.enable pid=565 uid=0 gid=0 scontext=u:r:logsvc:s0 tcontext=u:object_r:vendor_apklogfs_prop:s0 tclass=property_service permissive=1'
+[   62.358946] type=1400 audit(1686705536.252:50): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   62.381356] type=1400 audit(1686785536.252MLJ'
+ denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   62.404910] type=1400 audit(1686705536.253:52): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   62.429009] type=1400 audit(1686705536.253:53): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   62.449725] type=1400 audit(1686705536.253:54): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=26651 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   62.473873] type=1400 audit(1686705536.253:55): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   62.493990] type=1400 audit(1686705536.253:56): avc: denied { node_bind } for comm="sensors@2.0-ser" src=50612 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   62.515064] type=1400 audit(1686705536.253:57): avc: denied { connect } for comm="sensors@2.0-ser" lport=50612 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   62.536582] type=1400 audit(1686705536.253:58): avc: denied { write } fr comm="sensors@2.0-ser" laddr=127.0.0.1 lport=50612 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.360691] type=1400 audit(1686705541.254:68): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontuxt=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   67.383594] type=1400 audit(1686705541.254:69): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   67.407163] type=1400 audit(1686705541.254:70): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   67.431033] type=1400 audit(1686705541.254:71): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.451207] type=1400 audit(1686705541.254:72): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=26739 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.474733] type=1400 audit(1686705541.254:73): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.494677] type=1400 audit(1686705541.254:74): avc: denied { node_bind } for comm="sensors@2.0-ser" src=55105 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   67.515312] type=1400 audit(1686705541.254:75): avc: denied { connect } for comm="sensors@2.0-ser" lport=55105 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_soket$xermissive=1
+[   67.536731] type=1400 audit(1686705541.255:76): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=55105 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.561927] type=1400 audit(1686705541.255:77): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=55105 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   67.912676] init: starting service 'audioserver'...
+[   67.924285] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   67.938306] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   67.947768] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   67.972948] init: Service 'audioserver' (pid 631) exited with status 127
+[   67.980557] init: Sending signal 9 to service 'audioserver' (pid 631) process group...
+[   67.989998] libprocessgroup: Successfully killed process cgroup uid 1041 pid 631 in 0ms
+[   67.999689] init: Sending signal 9 to service 'vendor.audio-hal' (pid 586) process group...
+[   68.015045] libprocessgroup: Successfully killed process cgroup uid 1041 pid 586 in 5ms
+[   68.034660] init:(Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 6ms and failed: service vendor.audio-hal-4-0-msd not found
+[   70.333721] AidlLazyServiceRegistrar: Prcess has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
+[   71.286872] apexd: Can't open /system_ext/apex for reading : No such file or directory
+[   71.295934] apexd: Can't open /product/apex for reading : No such file or directory
+[   71.304720] apexd: Can't open /vendor/apex for reading : No such file or directory
+[   72.363443] type=1400 audit(1686705546.256:92): avc: denied { node_bind } for comm="sensors@2.0-ser" src=59409 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   72.924423] init: starting service 'audioserver'...
+[   72.934013] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   72.936069] init: cannot execv('/system/bin/audioserver'). See the 'DebugginJ section of init's README.md for tips: Operation not permitted
+[   72.945390] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   72.983055] init: Service 'audioserver' (pid 674) exited with status 127
+[   72.990987] init: Sending signal 9 to service 'audioserver' (pid 674) process group...
+[   73.000758] libprocessgroup: Successfully killed process cgroup uid 1041 pid 674 in 0ms
+[   73.010111] init: Sending signal 9 to service 'vendor.audio-hal' (pid 633) process group...
+[   73.028283] libprocessgroup: Successfully killed process cgroup uid 1041 pid 633 in 6ms
+[   73.040427] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   77.937149] init: starting service 'audioserver'...
+[   77.947883] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   77.949788] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   77.959281] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   77.993940] init: Service 'audioserver' (pid 684) exited with status0127
+[   78.001731] init: Sending signal 9 to service 'audioserver' (pid 684) process group...
+[   78.011085] libprocessgroup: Successfully killed process cgroup uid 1041 pid 684 in 0ms
+[   78.020300] init: updatable process 'audioserver' exited 4 times before boot completed
+[   78.030211] apexd: Native process 'audioserver' is crashing. Attempting a revert
+[   78.0302NWJ Sending signal 9 to service 'vendor.audio-hal' (pid 675) process group...
+[   78.038690] apexd: Revert failed : Revert requested, when there are no active sessions.
+[   78.053893] libprocessgroup: Successfully killed process coroup uid 1041 pid 675 in 5ms
+[   82.366544] type=1400 audit(1686705556.259:93): avc: denied { read } fo"sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   82.38987] type=1400 audit(1686705556.259:94): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   82.413989] type=1400 audit(1686705556.259:95): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   82.438420] type=1400 audit(1686705556.259:96): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   82.458890] type=1400 audit(1686705556.259:97): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=26833 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   82.482534] type=1400 audit(1686705556.259:98): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   82.502605] type=1400 audit(1686705556.259:99): avc: denied { name_bind } for comm="sensors@2.0-ser" src=61883 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[   82.523220] type=1400 audit(1686705556.260:100): avc: denied { node_bind } for comm="sensors@2.0-ser" src=61883 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   82.544077] type=1400 audit(1686705556.260:101): avc: denied { connect } for comm="sensors@2.0-ser" lport=61883 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   82.565698] type=1400 audit(1686705556.360:102): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=61883 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   82.950994] init: starting service 'audioserver'...
+[   82.961058] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   82.962410] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   82.972430] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   83.008798] init: Service 'audioserver' (pid 694) exited with status 127
+[   83.016423] init: Sending signal 9 to service 'audioserver' (pid 694) process group...
+[   83.025705] libprocessgroup: Successfully killed process cgroup uid 1041 pid 694 in 0ms
+[   83.035077] init: updatable process 'audioserver' exited 4 times before boot completed
+[   83.045303] init: Sending signal 9 to service 'vendor.audio-hal' (pid 686) process group...
+[   83.061297] libprocessgroup: Successfully killed process cgroup uid 1041 pid 686 in 6ms
+[   85.333585] AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 0
+[   85.348326] AidlLazyServiceYVk Shutdown prevented by forcePersist override flag.
+[   86.678281] healthd: battery l=1 v=3660 t=0.0 h=2 st=3 c=-288040 fc=3498768 chg=
+[   87.370063] type=1400 audit(1686705561.263:107): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   87.392579] type=1400 audit(1686705561.263:108): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   87.417632] type=1400 audit(1686705561.263:109): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" ev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permis{ive=1
+[   87.441670] type=1400 audit(1686705561.264:110): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   87.462025] type=1400 audit(1686705561.264:111): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=26848 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensorw_default:s0 tclass=udp_socket permissive=1
+[   87.485717] type=1400 audit(1686705561.264:112): avc: denied { bind }Kcomm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=ud_socket permissive=1
+[   87.505903] type=1400 audit(1686705561.264:113): avc: denied { connect } for comm="sensors@2.0-ser" lport=47021 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   87.527445] type=1400 audit(1686705561.264:114): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.9 lport=47021 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   87.552706] type=1400 audit(1686705561.264:115): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=47021 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   87.961537] init: starting service 'audioserver'...
+[   87.977533] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   87.979125] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   87.989014] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37)(took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   88.023111] init: Service 'audioserver' (pid 716) exited with status 127
+[   88.030690] init: Sending signal 9 to service 'audioserver' (pid 716) process group...
+[   88.039797] libprocessgroup: Successfully killed process cgroup uid 1041 pid 716 in 0ms
+[   88.048937] init: updateble process 'audioserver' exited 4 times before boot completed
+[   88.058608] init: Sending signal 9 to service 'vendor.audio-hal' (pid 700) process group...
+[   88.073454] libprocessgroup: Successfully killed process cgroup uid 1041 pid 700 in 5ms
+[   92.372615] type=1400 audit(1686705566.266:116): avc: denied { node_bind } for comm="sensors@2.0-ser" src=35249 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   92.973707] init: starting service 'audioserver'...
+[   92.984253] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   92.985404] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   92.995623] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   93.031307] init: Service 'audioserver' (pid 741) exited with status 127
+[   93.039295] init: Sending signal 9 to service 'audioserver' (pid 741) process group...
+[   93.048573] libprocessgroup: Successfully killed process cgroup uid 1041 pid 741 in 0ms
+[   93.057960] init: updatable process 'audioserver' exited 4 times before boot completed
+[   93.067788] init: Sending signal 9 to service 'vendor.audio-hal' (pid 718) process group...
+[   93.083081] libprocessgroup: Successfully killed process cgroup uid 1041 pid 718 in 5ms
+[   97.375098] type=1400 audit(1686705571.267:117): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   97.397996] type=1400 audit(1686705571.267:118): avc: denied { open } for`comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:objY,%system_file:s0 tclass=file permissive=1
+[   97.421883] type=1400 audit(1686705571.267:119): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[   97.446214] type=1400 audit(1686705571.267:120): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.466759] type=1400 audit(1686705571.268:121): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=26955 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.490625] type=1400 audit(1686705571.268:122): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.510698] type=1400 audit(1686705571.268:123): avc: denied { node_bind } for comm="sensors@2.0-ser" src=41525 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[   97.531529] type=1400 audit(1686705571.268:124): avc: denied { connect } for comm="sensors@2.0-ser" lport=41525 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.554120] type=1400 audit(1686705571.268:125): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=41525 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.579665] type=1400 audit(1686705571.268:126): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=41525 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[   97.983423] init: starting service 'audioserver'...
+[   98.002103] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[   98.007279] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[   98.014647] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[   98.051581] init: Service 'audioserver' (pid 771) exited with status 127
+[   98.060723] init: Sending signal 9 to service 'audioserver' (pid 771) process group...
+[   98.071677] libprocessgroup: Successfully killed process cgroup uid 1041 pil 771 in 0ms
+[   98.081404] init: updatable process 'audioserver' exited 4 times before boot completed
+[   98.093057] init: Sending signal 9 to service 'vendor.audio-hal' (pid 746) process group...
+[   98.110936] libprocessgroup: Successfully killed process cgroup uid 1041 pid 746 in 8ms
+[  102.376200] type=1400 audit(1686705576.270:127): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" inu:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  102.398752] type=1400 audit(1686705576.270:128): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  102.422417] type=1400 audit(1686705576.270:129): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  102.446291] type=1400 audit(1686705576.270:130): avc: denied { name_bind } for comm="sensors@2.0-ser" src=64695 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  103.002507] init: starting service 'audioserver'...
+[  103.016449] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  103.017039] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  103.028815] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  103.062375] init: Service 'audioserver' (pid 821) exited with status 127
+[  103.070955] init: Sending signal 9 to service 'audioserver' (pid 821) process group...
+[  103.080100] libprocessgroup: Successfully killed process cgroup uid 1S821 in 0ms
+[  103.089226] init: updatable process 'audioserver' exited 4 times before boot completed
+[  103.098851] init: Sending signal 9 to service 'vendor.audio-hal' (pid 774) process group...
+[  103.113768] libprocessgroup: Successfully killed process cgroup uid 1041 pid 774 in 5ms
+[  107.379002] type=1400 audit(1686705581.272:131): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  107.399276] type=1400 audit(1686705581.272:132): avc: denied { setattr } for comm="sensors@j name="UDP" dev="sockfs" ino=27123 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  107.422971] type=1400 audit(1686705581.272:133): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  107.443017] type=1400 audit(1686705581.272:134): avc: denied { name_bind } for comm="sensors@2.0-ser" src=62152 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  107.463710] type=1400 audit(1686705581.272:135): avc: denied { oonect } for comm="sensors@2.0-ser" lport=62152 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  107.485129] type=1400 audit(1686705581.273:136): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=62152 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  107.510444] type=1400 audit(1686705581.273:137): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=62152 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  108.019262] init: starting service 'audioserver'...
+[  108.033233] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  108.033561] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  108.044740] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  108.078685] init: Service 'audioserver' (pid 832) exited with status 127
+[  108.086256] init: Sending signal 9 to service 'audioserver' (pid 832) process group...
+[  108.095450] libprocessgroup: Successfully killed process cgroup uid 1041 pid 832 in 0ms
+[  108.104636] init: updatable process 'audioserver' exited 4 times before boot completed
+[  108.114208] init: Sending signal 9 to service 'vendor.audio-hal' (pid 823) process group...
+[  108.129182] libprocessgroup: Succussfully killed process cgroup uid 1041 pid 823 in 5ms
+[  113.032047] init: starting service 'audioserver'...
+[  113.042078] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  113.044330] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  113.053355] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  113.087489] init: Service 'audioserver' (pid 841) exited with status 127
+[  113.095051] init: Sending signal 9 to service 'audioserver' (pid 841) process group...
+[  113.104449] libprocessgroup: Successfully killed process cgroup uid 1041 pid 841 in 0ms
+[  113.113604] init: updatable process 'audioserver' exited 4 times before boot completed
+[  113.123400] init: Sending signal 9 to service 'vendor.audio-hal' (pid 834) process group...
+[  113.138464] libprocessgroup: Successfully killed process cgroup uid 1041 pid 834 in 5ms
+[  117.314180] type=1400 audit(1686705591.208:138): avc: denied { read } for comm="health@2.1-serv" name="present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  117.336530] type=1400 audit(1686705591.208:139): avc: denied { open } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/808622C1:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  117.369299] type=1400 audit(1686705591.208:140): avc: denied { getattr } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/8:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  117.381165] healthd: battery l=1 v=3696 t=0.0 h=2 st=3 c=-128000 fc=3498768 chg=
+[  118.046285] init: starting service 'audioserver'...
+[  118.057162] init: processing action (init.svc.audioserver=runZ from (/system/etc/init/audioserver.rc:35)
+[  118.058745] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  118.068474] init: C+'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.r,S0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  118.102573] init: Service 'audioserver' (pid 854) exited with status 127
+[  118.110129] init: Sending signal 9 to service 'audioserver' (pid 854) process group...
+[  118.119213] libprocessgroup: Successfully killed process cgroup uid 1041 pid 854 in 0ms
+[  118.128341] init: updatable process 'audioserver' exited 4 times before boot completed
+[  118.137936] init: Sending signal 9 to service 'vendor.audio-hal' (pid 843) process group...
+[  118.152965] libprocessgroup: Successfully killed process cgroup uid 1041 pid 843 in 5ms
+[  123.057464] init: starting service 'audioserver'...
+[  123.071355] init: processing action (init.svc.audioserves=running) from (/system/etc/init/audioserver.rc:35)
+[  123.072702] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  123.0826init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  123.116772] init: Service 'audioserver' (pid 865) exited with status 127
+[  123.124354] init: Sending signal 9 to service 'audioserver' (pid 865) process group...
+[  123.133554] libprocessgroup: Successfully killed process cgroup uid 1041 pid 865 in 0ms
+[  123.142737] init: updatable process 'audioserver' exited 4 times before boot completed
+[  123.152523] init: Sending signal 9 to service 'vendor.audio-hal' (pid 856) process group...
+[  123.167458] libprocessgroup: Successfully killed process cgroup uid 1041 pid 856 in 5ms
+[  128.075048] init: starting service 'audioserver'...
+[  128.088533] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  128.088985] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: OYnot permitted
+[  128.100163] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  128.134054] init: Service 'audioserver' (pid 874) exited with status 127
+[  128.141620] init: Sending signal 9 to service 'audioserver' (pid 874) process group...
+[  128.150859] libprocessgroup: Successfully killed process cgroup uid 1041 pid 874 in 0ms
+[  128.160004] init: updatable process 'audioserver' exited 4 times before boot co}pleted
+[  128.169666] init: Sending signal 9 to service 'vendor.audio-hal' (pid 867) process group...
+[  128.184680] libprocessgroup: Successfully killed process cgroup uid 1041 pid 867 in 5ms
+[  133.087526] init: starting service 'audioserver'...
+[  133.099526] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  133.100240] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  133.125493] init: Service 'audioserver' (pid 885) exited with status 127
+[  133.133169] init: Sending signal 9 to service 'audioserver' (pid 885) process group...
+[  133.142454] libprocessgroup: Successfully killed process cgroup uid 1041 pid 885 in 0ms
+[  133.151782] init: uxdatable process 'audioserver' exited 4 times before boot completed
+[  133.161473] ini|: Sending signal 9 to service 'vendor.audio-hal' (pid 876) process group...
+[  133.176521] libprocessgroup: Successfully killed process cgroup uid 1041 pid 876 in 5ms
+[  133.186283] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  138.102559] init: starting service 'audioserver'...
+[  138.117079] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  138.117947] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  138.128366] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  138.162491] init: Service 'audioserver' (pid 894) exited with status 127
+[  138.170062] init: Sending signal 9 to service 'audioserver' (pid 894) process group...
+[  138.179174] libprocessgroup: Successfully killed process cgroup uid 1041 pid 894 in 0ms
+[  138.188510] init: updatable process 'audioserver' exited 4 times before boot completed
+[  138.198368] init: Sending signal 9 to service 'vendor.audio-hal' (pid 887) process group...
+[  138.215446] libprocessgroup: Successfully killed process cgroup uid 1041 pid 887 in 7ms
+[  143.117425] init: starting service 'audioserver'...
+[  143.131206] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  143.131675] init: cannot execv('/system/bin/audZk). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  143.142794] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/s.WVinit/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  143.176782] init: Service 'audioserver' (pid 905) exited with status 127
+[  143.184343] init: Sending signal 9 to service 'audioserver' (pid 905) process group...
+[  143.193441] libprocessgroup: Successfully killed process cgroup uid 1041 pid 905 in 0ms
+[  143.202574] init: updatable process 'audioserver' exited 4 times before boot completed
+[  143.Lynit: Sending signal 9 to service 'vendor.audio-hal' (pid 898) process group...
+[  143.227114] libprocessgroup: Successfully killed process cgroup uid 1041 pid 898 in 5ms
+[  148.133118] init: starting service 'audioserver'...
+[  148.143578] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  148.147917] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  148.154921] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  148.189072] init: Service 'audioserver' (pid 916) exited with status 127
+[  148.1;6634] init: Sending signal 9 to service 'audioserver' (pid 916) process group...
+[  148.205721] libprocessgroup: Successfully killed process cgroup uid 1041 pid 916 in 0ms
+[  148.214861] init: updatable process 'audioserver' exited 4 times before boot completed
+[  148.224465] init: Sending signal 9 to service 'vendor.audio-hal' (pid 907) process group...
+[  148.239585] libprocessgroup: Successfully killed process cgroup uid 1041 pid 907 in 5ms
+[  153.143539] init: starting service 'audioserver'...
+[  153.156808] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  153.158559] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  153.183055] init: Service 'audioserver' (pid 925) exited with status 127
+[  153.190783] init: Sending signal 9 to service 'audioserver' (pid 925) process group...
+[  153.200260] libprocessgroup: Successfully killed process cgroup uid 1041 pid 925 in 0ms
+[  153.209463] init: updatable process 'audioserver' exited 4 times before boot completed
+[  153.219284] init: Sending signal 9 to service 'vendor.audio-hal' (pid 918) process group...
+[  153.234249] libprocessgroup: Successfully killed process cgroup uid 1041 pid 918 in 5ms
+[  153.243917] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  158.159888] init: starting service 'audioserver'...
+[  158.172000] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  158.172890] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  158.198110] init: Service 'audioserver' (pid 936) exited with status 127
+[  158.205779] init: Sending signal 9 to service 'audioserver' (pid 936) process group...
+[  158.215118] libprocessgroup: Successfully killed process cgroup uid 1041 pid 936 in 0ms
+[  158.224363] init: updatable process 'audioserver' exited 4 times before boot completed
+[  158.635638] init: Sending signal 9 to service 'vendor.audio-hal' (pid 927) process group...
+[  158.250763] libprocessgroup: Successfully killed process cgroup(uid`1041 pid 927 in 5ms
+[  158.260878] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  162.432183] type=1400 audit(1686705636.325:141): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:objY,%system_file:s0 tclass=file permissive=1
+[  162.454999] type=1400 audit(1686705636.325:142): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  162.478820] type=1400 audit(1686705636.325:143): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  162.503140] type=1400 audit(1686705636.326:144): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  162.523630] type=1400 audit(1686705636.326:145): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=31884 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  162.547433] type=1400 audit(1686705636.326:146): avc: denied { bind_2comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  162.567675] type=1400 audit(1686705636.326:147): avc: denied { name_bind } for comm="sensors@2.0-ser" src=1387 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  162.588577] type=1400 audit(1686705636.326:148): avc: denied { node_bind } for comm="sensors@2.0-ser" src=1387 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  162.609445] type=1400 audit(1686705636.326:149): avc: denied { connect } for comm="sensors@2.0-ser" lport=1387 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  162.630993] type=1400 audit(1686705636.326:150): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=1387 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  163.170342] init: starting service 'audioserver'...
+[  163.186660] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  163.186712] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  163.212765] init: Service 'audioserver' (pid 1035) exited with status 127
+[  163.220541] init: Sending signal 9 to service 'audioserver' (pid 1035) process group...
+[  163.229896] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1035 in 0ms
+[  163.239209] init: updatable process 'audioserver' exited 4 times before boot completed
+[  163.250017] init: Sending signal 9 to service 'vendor.audio-hal' (pid 938) process group...
+[  163.265132] libprocessgroup: Successfully killed process cgroup uid 1041 pid 938 in 5ms
+[  163.274771] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  167.434703] type=1400 audit(1686705641.328:152): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  167.457432] type=1400 audit(1686705641.328:153): avc: denied { open } for comm="sensors@2.0-se" path=&/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  167.481153] type=1400 audit(1686705641.328:154): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  167.505074] type=1400 audit(1686705641.&&J
+ denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  177.525582] type=1400 audit(1686705641.329:156): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=31975 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  167.549239] type=1400 audit(1686705641.329:157): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[ !167.569362] type=1400 audit(1686705641.329:158): avc: denied { node_bind } for comm="sensors@2.0-ser" src=3650 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  167.590145] type=1400 audit(1686705641.329:159): avc: denied { connect } for comm="sensors@2.0-ser" lport=36506 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  167.611679] type=1400 audit(1686705641.329:160): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=36506 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  167.637016] type=1400 audit(1686705641.329:161): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=36506 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  168.189722] init: starting service 'audioserver'...
+[  168.201749] init: processing action (init.svc.audioserver=running) fromietc/init/audioserver.rc:35)
+[  168.203530] init: cannot execv('/system/bin/audioserver'). See the 'DebugginJ section of init's README.md for tips: Operation not permitted
+[  168.215889] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  168.247036] init: Service 'audioserver' (pid 1044+ exited with status 127
+[  168.254691] init: Sending signal 9 to service 'audioserver' (pid 1044) process group...
+[  168.263953] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1044 in 0ms
+[  168.273237] init: updatable process 'audioserver' exited 4 times before boot completed
+[  168.283196] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1037) process group...
+[  168.299285] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1037 in 6ms
+[  173.201490] init: starting service 'audioserver'...
+[  173.215098] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  173.217337] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  173.226684] init: Command 'start vendor.audio-hal-4-0-msd' action=knit.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  173.260566] init: Service 'audioserver' (pid 1055) exited with status 127
+[  173.268448] init: Sending signal 9 to service 'audioserver' (pid 1055) process group...
+[  173.277977] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1055 in 0ms
+[  173.287689] init: updatable process 'audioserver' exited 4 times before boot completed
+[  173.297632] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1046) process group...
+[  173.312701] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1046 in 5ms
+[  177.315418] type=1400 audit(1686705651.208:163): avc: denied { read } for comm="health@2.1-serv" name="present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:.u:object_r:sysfs:s0 tclass=file permissive=1
+[  177.331207] healthd: battery l=1 v=3696 t=0.0 h=2 st=3 c=-144000 fc=3498768 chg=
+[  177.338430] type=1400 audit(1686705651.209:164): avc: denied { open } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/808622C1:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s4 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  177.379008] type=1400 audit(1686705651.209:165): avc: denied { etattr } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/808622C1:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  178.215680] init: starting service 'audioserver'...
+[  178.226825] init: processing action (init.svc.audioserver=running) nrom (/system/etc/init/audioserver.rc:35)
+[  178.228558] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  178.238328] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  178.272396] init: Service 'audioserver' (pid 1066) exited with status 127
+[  178.280244] init: Sending signal 9 to service 'audioserver' (pid 1066) process group...
+[  178.289591] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1066 in 0ms
+[  178.298964] init: updatable process 'audioserver' exited 4 times before boot completed
+[  178.308813] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1057) process group...
+[  178.324000] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1057 in 5ms
+[  183.227067] init: starting service 'audioserver'...
+[  183.239248] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of inZREADME.md for tips: Operation not permitted
+[  183.239782] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  183.265181] init: Service 'audioserver' (pid 1075) exited with status0127
+[  183.272864] init: Sending signal 9 to service 'audioserver' (pid 1075) process group...
+[  183.282174] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1075 in 0ms
+[  183.291599] init: updatable process 'audioserver' exited 4 times before boot completed
+[  183.301373] init: Sendinw signal 9 to service 'vendor.audio-hal' (pid 1068) process group...
+[  183.316461] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1068 in 5ms
+[  183.326409] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  188.238722] init: starting service 'audioserver'...
+[  188.250314] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  188.250587] init: cannot execv('/system/bin/audioserver').(See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  188.261663] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd notfound
+[  188.295743] init: Service 'audioserver' (pid 1086) exited with status 127
+[  188.303417] init: Sending signal 9 to service 'audioserver' (pid 1086) process group...
+[  188.313053] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1086 in 0ms
+[  188.322398] init: updatable process 'audioserver' exited 4 times before boot completed
+[  188.332590] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1077) process group...
+[  188.347920] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1077 in 5ms
+[  193.250618] init: starting service 'audioserver'...
+[  193.264968] init: processing action (init.svc.audioservYning) from (/system/etc/init/audioserver.rc:35)
+[  193.266608] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  193.276410] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  193.310346] init: Service 'audioserver' (pid 1095) exited with status 127
+[  193.318226] init: Sending signal 9 to service 'audioserver' (pid 1095) process group...
+[  193.327723] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1095 in 0ms
+[  193.337087] init: updatable process 'audioserver' exited 4 times before boot completed
+[  193.347422] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1088) process group...
+[  193.363456] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1088 in 6ms
+[  197.455380] type=1400 audit(1686705671.349:166): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  197.477987] type=1400 audit(1686705671.349:167): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  197.501570] type=1400 audit(1686705671.349:168): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  197.525566] type=1400 audit(1686705671.349:169): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  197.546874] type=1400 audit(1686705671.349:170): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=32413 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  197.570548] type=1400 audit(1686705671.349:171): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  197.590716] type=1400 audit(1686705671.349:172): avc: denied { node_bind } for comm="sensors@2.0-ser" src=54282 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclassO]}permissive=1
+[  197.611590] type=1400 audit(1686705671.349:173): avc: denied { connect } for comm="sensors@2.0-ser" lport=54282 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  197.633193] type=1400 audit(1686705671.349:174): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=54282 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  197.658564] type=1400 audit(1686705671.349:175): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=54282 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  198.268332] init: starting service 'audioserver'...
+[  198.283647] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  198.init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  198.311672] init: Service 'audioserver' (pid 1179) exited with status 127
+[  198.319422] init: Sending signal 9 to service 'audioserver' (pid 1179) process group...
+[  198.328820] libprocessgroup: Successfully killed`process cgroup uid 1041 pid 1179 in 0ms
+[  198.338094] init: updatable process 'audioserver' exited 4 times before boot completed
+[  198.348024] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1099) process group...
+[  198.363077] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1099 in 5ms
+[  198.372961] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  201.266346] sysrq: Show Blocked State
+[  201.271607] sysrq: Show backtrace of all active CPUs
+[  201.277467] NMI backtrace for cpu 1
+[  201.281426] CPU: 1"PID: 647 Comm: watchdog Tainted: G     U            5.10.100-gdf8cc6fd8285-dirty #18
+[  201.291938] Hardware name: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/13/2016
+[  201.299725] Call Trace:
+[  201.302476]  dump_stack_lvl+0x8a/0xda
+[" 201.306588]  ? ethnl_set_debug.cfi_jt+0x10/0x10
+[  201.311662]  nmi_trigger_cpumask_backtrace+0x116/0x190
+[  201.317422]  ? noop_send_IPI_allbutself+0x8/0x8
+[  201.322500]  sysrq_handle_showallcpus+0x1e/0x20
+[  201.327575}  __handle_sysrq+0x14c/0x190
+[  201.331870]  write_sysrq_trigger+0x3e/0x60
+[  201.336457]  ? sg_proc_write_dressz+0x8/0x8
+[  201.341142]  proc_reg_write+0x97/0x160
+[  201.345338]  ? sdhci_set_power_noreg.cfi_jt+0x8/0x8
+[  201.350796]  ? snd_compr_write+0x8/0x8
+[  201.354995]  vfs_write+0x17a/0x4f0
+[  201.358806]  ? __might_sleep+0x4a/0x80
+[  201.363003]  ? __x64_sys_waitpid.cfi_jt+0x8/0x8
+[  201.368075]  ksys_write+0x78/0xe0
+[  201.371786]  ? __x64_sys_waitpid.cfi_jt+0x8/0x8
+[  201.376855]  __x64_sys_write+0x1b/0x20
+[  201.381052]  do_syscall_64+0x56/0x90
+[  201.385057]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[  201.390711] RIP: 0033:0x7001314301f7
+[  201.394713] Code: 00 00 00 b8 00 00 00 00 0f 05 48 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 08 fb ff ff c3 0f 1f 80 00 00 00 00 b8 01 00 00 00 0f 05 <48> 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 e8 fa ff ff c3 0f 1f 80 00
+[  201.415712] RSP: 002b:00006ffe41b98508 EFLAGS: 00000213 ORIG_RAX: 0000000000000001
+[  201.424188] RAX: ffffffffffffffda RBX: 00000000000000a7 RCX: 00007001314301f7
+[  201.432170] RDX: 0000000000000001 RSI: 000070001d868ae0 RDI: 00000000000000a7
+[  201.440149] RBP: 0000000000000000 R08: ffffffffffffffff R09: 0000000000000010
+[  201.448130] R10: 000000006f6442b0 R11: 0000000000000213 R12: 00000000135237d8
+[  201.456113] R13: 0000000000000001 R14: 00006ffebd8b5c90 R15: 000000006f5f84b8
+[  201.464214] Sending NMI from CPU 1 to CPUs 0,2-3:
+[  201.469571] NMI backtrace for cpu 0 skipped: idling at acpi_processor_ffh_cstate_enter+0x80/0xc0
+[  201.469661] NMI backtrace for cpu 3
+[  201.469670] CPU: 3 PID: 270 Comm: logcat Tainted: G     U            5.10.100-gdf8cc6fd8285-dirty #18
+[  201.469675] Hardware name: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/13/2016
+[  201.469679] RIP: 0033:0x726f92f3c78c
+[  201.469687] Code: 48 39 ca 0f 84 79 ff ff ff 49 81 f8 00 00 10 00 77 2c 0f 1f 80 00 00 00 00 0f 1f 44 00 00 66 0f 7f 01 0f 29 41 10 0f 29 41 20 <0f> 29 41 30 48 83 c1 40 48 39 ca 75 e7 c3 66 0f 1f 44 00 00 66 0f
+[  201.469691] RSP: 002b:00007ffef9cf9dc8 EFLAGS: 00000206
+[  201.469701] RAX: 00007ffef9cf9f40 RBX: 0000627cafc33ffb RCX: 00007ffef9cfb080
+[  201.469706] RDX: 00007ffef9cfb340 RSI: 0000000000000000 RDI: 00007ffef9cf9f40
+[  201.469710] RBP: 00007ffef9cf9f40 R08: 0000000000001404 R09: 00007ffef9cf971c
+[  201.469715] R10: 000000000000001f R11: 0000000000000213 R12: 0000627cafc31d50
+[  201.469720] R13: 0000000000000007 R14: 0000000000000007 R15: 00007ffef9cfb390
+[  201.469723] FS:  0000726f933b9ff8 GS:  0000000000000000
+[  201.469839] NMI backtrace for cpu 2
+[  201.469848] CPU: 2 PID: 0 Comm: swapper/2 Tainted: G    (U            5.10.100-gdf8cc6fd8285-dirty #18
+[  201.469853] Hardware name: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/1/2016
+[  201.469857] RIP: 0010:check_preemption_disabled+0x23/0x110
+[  201.469865] Code: 0f 1f 80 00 00 00 00 55 48 89 e5 41 57 41 56 41 54 53 48 83 ec 10 65 48 8b 04 25 28 00 00 00 48 89 45 d8 65 8b 1d 15 0d dc 60 <65> 8b 05 22 75 dc 60 a9 ff ff ff 7f 74 22 65 48 8b 04 25 28 00 00
+[  201.469869] RSP: 0018:ffff9cca000dfe60 EFLAGS: 00000086
+[  201.469878] RAX: a7f836b008f26f00 RBX: 0000000000000002 RCX: ffff9cca000dfec0
+[  201.469883] RDX: 0000002ee8852730 RSI: ffffffffa14b37dc RDI: ffffffffa157fac3
+[  201.469887] RBP: ffff9cca000dfe90 R08: 0000000000000000 R09: 0000002f0536c3ea
+[  201.469892] R10: 0000000000000000 R11: ffffffff9f4120e0 R12: 0000000000000000
+[  201.469896] R13: 0000000000000000 R14: 0000000000000002 R15: ffffffff9f45c420
+[  201.469901] FS:  0000000000000000(0000) GS:ffff9a9eb6900000(0000) knlGS:0000000000000000
+[  201.469905] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033[  201.469909] CR2: 000074d2c73b1630 CR3: 000000003ba14000 CR4: 00000000001006e0
+[  201.469912] Call Trace:
+[  201.469916]  ? veth_fix_features+0x10/0x10
+[  201.469919]  __this_cpu_preempt_check+0x13/0x15
+[  201.469923]  local_touch_nmi+0x15/0x30
+[  201.469926]  arch_cpu_idle_enter+0x15/0x20
+[  201.469930]  do_idle.llvm.4556761197177664070+0x9e/0x270
+[  201.469933]  ? veth_fix_features+0x10/0x10
+[  201.469937]  cpu_startup_entry+0x25/0x30
+[  201.469940]  ? i9xx_cleanup+0x8/0x8
+[  201.469944]  start_secondary+0x1c9/0x1d0
+[  201.469947]  secondary_startup_64_no_verify+0xb0/0xbb
+[  202.369671] selinux: SELinux:  Could not stat /sys/devices/virtual/net/ipsec_test: No such file or directory.
+[  202.382734] selinux: 
+[  202.457354] type=1400 audit(1686705676.351:176): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  202.480597] type=1400 audit(1686705676.351:177): avc: denied { open } for comm="senwors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tlass=file permissive=1
+[  202.505080] type=1400 audit(1686705676.351:178): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  202.533076] type=1400 audit(1686705676.351:179): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  202.554779] type=1400 audit(1686705676.351:180): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=35680 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  202.581395]$type=1400 audit(1686705676.351:181): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_defalt:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  202.602629] type=1400 audit(1686705676.351:182): avc: denied { node_bind } for comm="sensors@2.0-ser" src=40012 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  202.624101] type=1400 audit(1686705676.351:183): avc: denied { connect"} for comm="sensors@2.0-ser" lport=40012 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  202.646543] type=1400 audit(1686705676.351:184): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=40012 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  202.672647] type=1400 audit(1686705676.351:185): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=40012 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  203.281388] init: starting service 'audioserver'...
+[  203.290788] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  203.292277] init: cannot execv('/system/bin/audioserver'). See uhe 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  203.302187] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  203.336253] init: Service 'audioserver' (pid 1237) exited with status 127
+[  203.343934] init: Sending signal 9 to service 'audioserver' (pid 1237) process group...
+[  203.355906] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1237 in 0ms
+[  203.365159] init: updatable process 'audioserver' exited 4 times before boot completed
+[  203.374917] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1181) process group...
+[  203.390198] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1181 in 5ms
+[  205.333596] AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
+[  205.433801] apexd: Can't open /system_ext/apex for reading : No such file or directory
+[  205.442958] apexd: Can't open /product/apex for reading : No such file or directory
+[  205.452039] apexd: Can't open ?vendor/apex for reading : No such file or directory
+[  207.460117] type=1
+1686705681.353:202): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_filY.file permissive=1
+[  207.483508] type=1400 audit(1686705681.353:203): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  207.507675] type=1400 audit(1686705681.353:204): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  207n532309] type=1400 audit(1686705681.353:205): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  207.553225] type=1400 audit(1686705681.353:206): avc: denied /} for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=39972 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  207.577359] type=1400 audit(1686705681.353:207): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  207.597617] type=1400 audit(1686705681.353:208): avc: denied { node_bind } for comm="sensors@2.0-ser" src=60710 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  207.619049] type=1400 audit(1686705681.353:209): avc: denied { connect } for comm="sensors@2.0-ser" lport=60710 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  207.640758] type=1400 audit(1686705681.353:210): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=60710 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  207.666487] type=1400 audit(1686705681.353:211): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=60710 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  208.290465] init: starting service 'audioserver'...
+[  208.301607] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  208.304413] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  208.313471] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd notfound
+[  208.347253] init: Service 'audioserver' (pid 1300) exited with status 127
+[  208.355220] init: Sending signal 9 to service 'audioserver' (pid 1300) process group...
+[  208.364664] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1300 in 0ms
+[  208.374365] init: updatable process 'audioserver' exited 4 times before boot completed
+[  208.384793] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1239) process group...
+[  208.400528] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1239 in 5ms
+[  210.333955] AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 0
+[  210.348763] AidlLazyServiceRegistrar: Shutdown prevented by forcePersist override flag.
+[  212.270408] healthd: battery l=1 v=3643 t=0.0 h=2 st=3 c=-352000 fc=3498768 chg=
+[  212.462596] type=1400 audit(1686705686.355:215): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scntet=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  212.485191] type=1400 audit(1686705686.355:216): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_fiY.file permissive=1
+[  212.512056W1400 audit(1686705686.355:217): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  212.536094] type=1400 audit(1686705686.355:218): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  212.556564] type=1400 audit(1686705686.355:219): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=38000 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  212.580276] type=1400 audit(1686705686.355:220): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  212.600373] type=1400 audit(1686705686.355:221): avc: denied { nde_bind } for comm="sensors@2.0-ser" src=52131 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=utp_socket permissive=1
+[  212.621134] type=1400 audit(1686705686.355:222): avc: denied { connect } for comm="sensors@2.0-ser" lport=52131 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  212.642715] type=1400 audit(1686705686.355:223): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=52131 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  212.668056] type=1400 audit(1686705686.355:224): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=52131 faddr=127.0.0.1 fport=53 sconYu:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  213.294458] init: Untracked pid 1356 exited with status 0
+[  213.300762] init: Untracked pid 1358 exited with status 0
+[  213.311793] init: starting service 'audioserver'...
+[  213.326944] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  213.330291] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  213.338445] init: Command 'start vendor.audio-hal-4-0msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  213.379041] init: Service 'audioserver' (pid 1366) exited with status 127
+[  213.386824] init: Sending signal 9 to service 'audioserver' (pid 1366) process group...
+[  213.399596] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1366 in 0ms
+[  213.409003] init: updatable process 'audioserver' exited 4 times before boot completed
+[  215.912788] binder: undelivered transaction 26138, process died.
+[  217.463268] type=1400 audit(1686705691.356:228): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  217.485958] type=1400 audit(1686705691.356:229): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  217.509858] type=1400 audit(1686705691.356:230): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  217.534081] type=1400 audit(1686705691.357:231): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  217.554385] type=1400 audit(1686705691.357:232): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=38426 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  217.578126] type=1400 audit(1686705691.357:233): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  217.598337] type=1400 audit(1686705691.357:234): avc: denied { node_bind } for comm="sensors@2.0-ser" src=47145 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  217.619131] type=1400 audit(1686705691.357:235): avc: denied { connect } for comm="sensors@2.0-ser" lport=47145 scontext=u:r:X5}s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  217.640733] type=1400 audit(1686705691.357:236): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=47145 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissve=1
+[  217.666160] type=1400 audit(1686705691.357:237): avc: denied { getopt } for comm="sensors@2.0-ser" lcddr=127.0.0.1 lport=47145 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  218.328237] init: starting service 'audioserver'...
+[  218.338666] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  218.340325] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  218.350198] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audkoseWrunning (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not founhr¢init: Service 'audioserver' (pid 1473) exited with status 127
+[  218.391806] init: Sending signal 9 to(service 'audioserver' (pid 1473) process group...
+[  218.401075] libprocessgroup: Successfully killed proces cgroup uid 1041 pid 1473 in 0ms
+[  218.410294] init: updatable process 'audioserver' exited 4 times beforeboot completed
+[  218.421907] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1373) process group...
+[  218.437823] libprocessgroup: Successfully killed qrocess cgroup uid 1041 pid 1373 in 6ms
+[  222.465060] type=1400 audit(1686705696.358:238): avc: denied { read } for .0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  222.487725] type=1400 audit(1686705696.359:239): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  222.511694] type=1400 audit(1686705696.359:240): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  222.536580] type=1400 audit(1686705696.359:241): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  222.557361] type=1400 audit(1686705696.359:242): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=38453 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  222.581277] type=1400 audit(1686705696.359:243): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  222.601428] type=1400 audit(1686705696.359:244): avc: denied { node_bind } for comm="sensors@2.0-ser" src=49800 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  222.622327] type=1400 audit(1686705696.359:245): avc: denied { connect } for comm="sensors@2.0-ser" lport=49800 scoYu:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  222.643934] type=1400 audit(1686705696.359:246): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=49800 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  222.669285] type=1400 audit(1686705696.360:247): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=49800 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  223.336891] init: starting service 'audioserver'...
+[  223.346266] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  223.348523] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  223.357625] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  223.392362] init: Service 'audioserver' (pid 1484) exited with status 127
+[  223.400055] init: Sending signal 9 to service 'audioserver' (pid 1484) process group...
+[  223.409306] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1484 in 0ms
+[  223.418545] init: updatable process 'audioserver' exited 4 times before boot completed
+[  223.428417] init: Sending signal 9 to service 'vendornaudio-hal' (pid 1474) process group...
+[  223.443609] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1474 in 5ms
+[  227.470645] type=1400 audit(1686705701.364:249): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  227.493334] type=1400 audit(1686705701.364:250): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  227.517161] type=1400 audit(1686705701.364:251): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  227.541240] type=1400 audit(1686705701.364:252): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  227.561651] type=1400 audit(1686705701.364:253): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=38531 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  227.585336] type=1400 audit(1686705701.364:254): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  227.605353] type=1400 audit(1686705701.364:255): avc: denied { node_bind } for comm="sensors@2.0-ser" src=37799 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  227.626057] type=1400 audit(1686705701.365:256): avc: denied { connect } for comm="sensors@2.0-ser" lport=37799 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  227.647962] type=1400 audit(1686705701.365:257): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=37799 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  227.673457] type=1400 audit(1686705701.365:258): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=37799 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  228.349519] init: starting service 'audioserver'...
+[  228.359228] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  228.361005] init: cannot exec('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  228.370558] init: Command 'stirt!vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  228.405017] init: Service 'audioserver' (pid 1811) exited with status 127
+[  228.412886] init: Sending signal 9 to service 'audioserver' (pid 1811) process group...
+[  228.4libprocessgroup: Successfully killed process cgroup uid 1041 pid 1811 in 0ms
+[  228.431338] init: updatable process 'audioserver' exited 4 times before boot completed
+[  228.440974] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1485) process group...
+[  228.456015] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1485 in 5ms
+[  232.473289] type=1400 audit(1686705706.366:263): avc: denied {"read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  232.496180] type?1400 audit(1686705706.367:264): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  232.519820] type=1400 audit(1686705706.367:265): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  232.543764] type=1400 audit(1686705706.367:266): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket xermissive=1
+[  232.564240] type=1400 audit(1686705706.367:267): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=38907 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  232.588186] type=1400 audit(1686705706.367:268): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  232.608186] type=1400 audit(1686705706.367:269): avc: denied { node_bind } for comm="sensors@2.0-ser" src=54220 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  232.628993] type=1400 audit(1686705706.367:270): avc: denied { connect } for comm="sensors@2.0-ser" lport=54220 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  232.650719] type=1400 audit(1686705706.367:271): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=54220 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  232.676214] type=1400 audit(1686705706.368:272): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=54220 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  233.358367] init: starting service 'audioserver'...
+[  233.368458] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  233.370454] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' sectkon of init's README.md for tips: Operation not permitted
+[  233.379753] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  233.414070] init: Service 'audioserver' (pid 1962) exited with status 127
+[  233.421738] init: Sending signal 9 to servyce 'audioserver' (pid 1962) process group...
+[  233.431115] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1962 in 0ms
+[  233.440412] init: updatable process 'audioserver' exited 4 times before boot completed
+[  233.450142] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1812) process group...
+[  233.466230] libprocessgroup: Successfully killed process cgroup ui 1041 pid 1812 in 6ms
+[  237.333183] healthd: battery l=1 v=3660 t=0.0 h=2 st=3 c=-240000 fc=3498768 chg=
+[  237.478608] type=1400 audit(1686705711.372:276): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  237.504283] type=1400 audit(1686705711.372:277): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  237.528109] type=1400 audit(1686705711.372:278): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  237.552108] type=1400 audit(1686705711.372:279): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  237.572484] type=1400 audit(1686705711.372:280): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=59017 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  237.596301] type=1400 audit(1686705711.372:281): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  237.616414] type=1400 audit(1686705711.372:282): avc: denied { connect } for comm="sensors@2.0-ser" lport=48852 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  237.637977] type=1400 audit(1686705711.372:283): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=48852 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  237.663372] type=1400 audit(1686705711.373:284): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=48852 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  238.372555] init: starting service 'audioserver'...
+[  238.382199] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  238.383512] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  238.393577] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  238.430958] init: Service 'audioserver' (pid 2095) exited with status 127
+[  238.438736] init: Sending signal 9 to service 'audioserver' (pid 2095) process group...
+[  238.448021] libprocessgroup: Successfully killed process cgroup uid 1045 pid 2095 in 0ms
+[  238.457292] init: updatable process 'audioserver' exited 4 times before boot completed
+[  238.467804] init: Sending signal 9 to service 'vendor.audio-hal' (pid 1966) process group...
+[  238.484274] libprocessgroup: Successfully killed process cgroup uid 1041 pid 1966 in 6ms
+[  238.963901] type=1400 audit(1686705712.857:285): avc: denied { getattr } for comm="df" path="/mnt/vendor/oem_config" dev="mmcblk1p17" ino=2 scontext=u:r:dumpstate:s0 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1
+[  240.333563] AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
+[  240.349874] AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification androi)IApexService has clients: 0
+[  240.364709] AidlLazyServiceRegistrar: Shutdown prevented by forcePersist override flag.
+[  242.480424] type=1400 audit(1686705716.374:304): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  242.503802] type=1400 audit(1686705716.374:305): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  242.527491] type=1400 audit(1686705716.374:306): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  242.551496] type=1400 audit(1686705716.374:307): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  242.571781] type=1400 audit(1686705716.374:308): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=59236 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  242.595492] type=1400 audit(1686705716.374:309): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  242.615694] type=1400 audit(1686705716.374:310): avc: denied { name_bind } for comm="sensors@2.0-ser" src=6206 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  242.636362] type=1400 audit(1686705716.374:311): avc: denied { node_bind } for comm="sensors@2.0-ser" src=6206 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  242.657058] type=1400 audit(1686705716.374:312): avc: denied { connect } for comm="sensors@2.0-ser" lport=6206 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  242.678534] type=1400 audit(1686705716.374:313): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=6206 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  243.382015] init: starting service 'audioserver'...
+[  243.392991] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  243.394997] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  243.404204] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  243.438323] init: Service 'audioserver' (pid 2277) exited with status 127
+[  243.446110] init: Sending signal 9 to service 'audioserver' (pid 2277) process group...
+[  243.455423] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2277 in 0ms
+[  243.464664] init: updatable process 'audioserver' exited 4 times before boot completed
+[  243.474373] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2102) process group...
+[  243.489677] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2102 in 5ms
+[  245.334173] AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 1
+[  247.483324] type=1400 audit(1686705721.376:315): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  247.505960] type=1400 audit(1686705721.376:316): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  247.529684] type=1400 audit(1686705721.377:317): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sy.WVes0 tclass=file permissive=1
+[  247.553746] type=1400 audit(1686705721.377:318): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  247.575096] type=1400 audit(1686705721.377:319): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=59294 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  247.598818] type=1400 audit(1686705721.377:320): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  247.618922] type=1400 audit(1686705721.377:321): avc: denied { connect } for comm="sensors@2.0-ser" lport=27811 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  247.640505] type=1400 audit(1686705721.377:322): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=27811 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[ $247.665873] type=1400 audit(1686705721.377:323): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=27811 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  248.397581] init: starting service 'audioserver'...
+[  248.407174] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  248.408756] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  248.418449] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  248.452482] init: Service 'audioserver' (pid 2286) exited with status 127
+[  248.460141] init: Sending signal 9 to service 'audioserver' (pid 2286) process group...
+[  248.469365] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2286 in 0ms
+[  248.479002] init: updatable process 'audioserver' exited 4 times before boot completed
+[  248.488805] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2279) process group...
+[  248.503924] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2279 in 5ms
+[  252.486190] type=1400 audit(1686705726.379:324): avc: denied {$node_bind } for comm="sensors@2.0-ser" src=14719 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  253.406710] init: starting service 'audioserver'...
+[  253.417647] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  253.421925] init: cannot execv('/system/bin/audio). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  253.429407] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  253.463397] init: Service 'audioserver' (pid 2316) exited with status 127
+[  253.471101] init: Sending signal 9 to service 'audioserver' (pid 2316) process group...
+[  253.480313] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2316 in 0ms
+[  253.489538] init: updatable process 'audioserver' exited 4 times before boot completed
+[  253.499244] init:0Sending signal 9 to service 'vendor.audio-hal' (pid 2287) process group...
+[  253.514386] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2287 in 5ms
+[  256.128229] type=1400 audit(1686705730.021:325): avc: denied { use } for comm="dumpstate" path="pipe:[59332]" dev="pipefs" ino=59332 scontext=u:r:system_suspend:s0 tcontext=u:r:dumpstate:s0 tclass=fd permissive=1
+[  256.149680] type=1400 audit(1686705730.022:326): avc: denied { write } for comm="dumpstate" path="pipe:[59332]" dev="pipefs" ino=59332 scontext=u:r:system_suspend:s0 tcontext=u:r:dumpstate:s0 tclass=fifo_file permissive=1
+[  256.172484] type=1400 audit(1686705730.023:327): avc: denied { read } for comm="Binder:280_1" name="wakeup4" dev="sysfs" ino=9231 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[  256.194087] type=1400 audit(1686705730.023:328): avc: denied { open } for comm="Binder:280_1" path="/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1d/wakeup/wakeup4" dev="sysfs" ino=9231 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[  256.222059] type=1400 audit(1686705730.023:329): avc: denied { read } for comm="Binder:280_1" name="event_count" dev="sysfs" ino=9238 scontext=u:r:system_suspend:s0 tcontext=u:object_r:s}sfs:s0 tclass=file permissive=1
+[  256.244126] type=1400 audit(1686705730.023:330): avc: denied { open } for comm="Binder:280_1" path="/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1d/wakeup/wakeup4/event_count" dev="sysfs" ino=9238 scontYu:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  256.273290] type=1400 audit(1686705730.023:331): avc: denied { getattr } for comm="Binder:280_1" path="/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:1d/wakeup/wakeup4/event_count" dev="sysfs" ino=9238 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  256.302761] type=1400 audit(1686705730.041:332): avc: denied { read } for comm="Binder:280_1" name="wakeup20" dev="sysfs" ino=19420 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs_rtc:s0 tclass=dir permissive=1
+[  256.324924] type=1400 audit(1686705730.041:333): avc: denied { read open } for comm="Binder:280_1" path="/sys/devices/pnp0/00:04/rtc/rtc0/alarmtimer.3.auto/wakeup/wakeup20" dev="sysfs" ino=19420 scontext=u:r:system_suspend:s0 tcontext=u:object_r:sysfs_rtc:s0 tclass=dir permissive=1
+[  257.488344] type=1400 audit(1686705731.381:343): avc: denied { name_bind } for comm="sensors@2.0-ser" src=32228 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  258.421328] init: starting service 'audioserver'...
+[( 258.430747] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  258.433335] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  258.442098] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  258.476474] init: Service 'audioserver' (pid 2378) exited with status 127
+[  258.484141] init Sending signal 9 to service 'audioserver' (pid 2378) process group...
+[  258.493449] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2378 in 0ms
+[  258.502695] init: updatable process 'audioserver' exited 4 times before boot completed
+[  258.512370] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2317) process group...
+[  258.527454] libprocessgroup: Successfully killed proce.uid 1041 pid 2317 in 5ms
+[  260.334374] AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 0
+[  260.349280] AidlLazyServiceRegistrar: Shutdown prevented by forcePersist override flag.
+[  263.430343] init: starting service 'audioserver'...
+[  263.440183] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  263.442443] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  263.451410] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  263.485659] init: Service 'audioserver' (pid 2396) exited with status 127
+[  263.493424] init: Sending signal 9 to service 'audioserver' (pid 2396) process group...
+[  263.502692] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2396 in 0ms
+[  263.511972] init: updatable process 'a]Vk exited 4 times before boot completed
+[  263.521581] init: Sending signal 9 to service 'vendor.auZ+ (pid 2379) process group...
+[  263.536567] libprocessgroup: Success]+killed process cgroup uid 1041 pid 2379 in 5ms
+[  266.627780] binder: release 1296:2274 transaction 31564 out, still active
+[  266.679475] type=1400 audit(1686705740.573:344): avc: denied { call } for comm="dumpsys" scontext=u:r:duopstate_dropbox:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+[  267.494120] type=1400 audit(1686705741.387:345): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  267.517014] type=1400 audit(1686705741.387:346): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  267.541423] type=1400 audit(1686705741.387:347): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  267.565503] type=1400 audit(1686705741.387:348): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0(tclass=udp_socket permissive=1
+[  267.587124] type=1400 audit(1686705741.387:349): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=65893 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  267.610964] type=1400 audit(1686705741.387:350): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  267.631007] type=1400 audit(1686705741.387:351): avc: denied { name_bind } for comm="sensors@2.0-ser" src=23513 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  267.652024] type=1400 audit(1686705741.387:352): avc: denied { node_bind } for comm="sensors@2.0-ser" src=23513 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  268.442404] init: starting service 'audioserver'...
+[  268.458636] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  268.459076] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  268.470314] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  268.504125] init: Service 'audioserver' (pid 2499) exited with status 127
+[  268.512228] init: Sending signal 9 to service 'audioserver' (pid 2499) process group...
+[  268.521637] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2499 in 0ms
+[  268.531018] init: updatable process 'audioserver' exited 4 times before boot completed
+[  268.541013] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2397) process group...
+[  268.556361] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2397 in 5ms
+[  273.456895] init: starting service 'audioserver'...
+[  273.469397] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  273.469416] inkt: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  273.480770] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.aueioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  273.514822] init: Service 'audioserver' (pid 2510) exited with status 127
+[  273.522527] init: Sending signal 9 to service 'audioserver' (pid 2510) process group...
+[  273.531922] libprocessgroup: Successfully killecgroup uid 1041 pid 2510 in 0ms
+[  273.541258] init: updatable process 'audioserver' exited 4 times before boot kompleted
+[  273.551158] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2500) process group...
+[  273.566236] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2500 in 5ms
+[  278.468957] init: starting service 'audioserver'...
+[  278.482882] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  278.482893] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  278.483291] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  278.528516] init: Service 'audioserver' (pid 2519) exited with status 127
+[  278.536399] init: Sending signal 9 to service 'audioserver' (pid 2519) process group...
+[  278.546376] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2519 in 0ms
+[  278.=55999] init: updatable process 'audioserver' exited 4 times before boot completed
+[  278.566053] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2511) process group...
+[  278.584087] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2511 in 8ms
+[  282.503908] type=1400 audit(1686705756.397:356): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  282.527137] type=1400 audit(1686705756.397:357): avc: denied { opmn } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  282.550944] type}1400 audit(1686705756.397:358): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  283.485059] init: starting service 'audioserver'...
+[  283.495304] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  283.497588] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  283.506922] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms an2 service vendor.audio-hal-4-0-msd not found
+[  283.540729] init: Service 'audioserver' (pid 2530) exited with status 127
+[  283.548433] init: Sending signal 9 to service 'audioserver' (pid 2530) process group...
+[  283.559996] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2530 in 0ms
+[  283.569367] init: updatable process 'audioserver' exited 4 times before boot completed
+[  283.579623] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2520) process group...
+[  283.594644] libprocessgroup: Successfully killed process cgroup uid 1041 pid2520 in 5ms
+[  287.506162] type=1400 audit(1686705761.399:359): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  287.526464] type=1400 audit(1686705761.399:360): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=66038 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  287.551097] type=1400 audit(1686705761.399:361): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_fefault:s0 tclass=udp_socket permissive=1
+[  287.571286]0type=1400 audit(1686705761.400:362): avc: denied { connect } for comm="sensors@2.0-ser" lport=21111 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  287.592765] type=1400 audit(1686705761.400:363): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=21111 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontmxt=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  287.618067] type=1400 audit(1686705761.400:364): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=21111 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  288.496131] init: starting service 'audioserver'...
+[  288.507563] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  288.508047] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  288.519047] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  288.553190] init: Service 'audioserver' (pid MSJ*with status 127
+[  288.561153] init: Sending signal 9 to service 'audioserver' (pid 2541) process group...
+[  288.570645] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2541 in 0ms
+[  288.580127] init: updatable process 'audioserver' exited 4 times before boot completed
+[  288.590041] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2531) process group...
+[  288.605618] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2531 in 5ms
+[  293.510593] init: starting service 'audioserver'...
+[  293.521077] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  293.521746] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  293.532447] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/sytem/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  293.566667] init:'audioserver' (pid 2550) exited with status 127
+[  293.574428] init: Sending signal 9 to service 'audiosgrver' (pid 2550) process group...
+[  293.584005] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2550 in 0ms
+[  293.593377] init: updatable process 'audioserver' exited 4 times before boot completed
+[  293.603821] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2542) process group...
+[  293.618796] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2542 in 5ms
+[  297.315220] type=1400 audit(1686705771.208:365): avc: denied { read } for coom="health@2.1-serv" name="present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  297.338230] type=1400 audit(1686705771.209:366): avc: denied { open } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/808622C1:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_defa]s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[rtype=1400 audit(1686705771.209:367): avc: denied { getattr } for comm="health@2.1-serv" path="/sys/devices/pci0000:00/808622C1:06/i2c-6/i2c-INT33F4:00/axp288_fuel_gauge/power_supply/axp288_fuel_gauge/present" dev="sysfs" ino=24311 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[  297.418661] healthd: battery l=1 v=3696 t=0.0 h=2 st=3 c=-128000 fc=3498768 chg=
+[  298.519619] init: starting service 'audioserver'...
+[  298.528915] init: Untracked pid 2568 exited with status 0
+[  298.530836] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  298.535168] ini'pid 2570 exited with status 0
+[  298.556050] init: Service 'audioserver' (pid 2571) exited with status 127
+[  298.563946] init: Sending signal 9 to service 'audioserver' (pid 2571) process group...
+[  298.573553](libprocessgroup: Successfully killed process cgroup uid 1041 pid 2571 in 0ms
+[  298.583060] init: updatable process 'audioserver' exited 4 times before boot completed
+[  298.593125] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2551) process group...
+[  298.608446] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2551 in 5ms
+[  300.946592] binder: 1244:1259 transaction failed 29189/0, size 4-0 line 2653
+[  300.954643] binder: send failed reply for transaction 31564, target dead
+[  302.514315] type=1400 audit(1686705776.407:368): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev"dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  302.537923] type=1400 audit(1686745776.408:369): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  302.561897] type=1400 audit(1686705776.408:370): avc: denied { getattr } for comm="sensors@2.0-ser" Xzetc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  302.586020] type=1400 audit(1686705776.408:371): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:ha5}s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  302.606460] type=1400 audit(1686705776.408:372): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=68801 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  302.630290] type=1400 audit(1686705776.408:373): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  302.650570] type=1400 audit(1686705776.408:374): avc: denied { name_bind } for comm="sensors@2.0-ser" src=1498 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  302.671422] type=1400 audit(1686705776.408:375): avc: denied { node_bind } for comm="sensors@2.0-ser" src=1498 scontext=u:r:hal_sensors_lefault:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  302.692313] type=1400 audit(1686705776.408:376): avc: denied { connect } for comm="sensors@2.0-ser" lport=1498 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  302.713803] type=1400 audit(1686705776.408:377): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=1498 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  303.528549] init: starting service 'audioserver'...
+[  303.539279] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  303.540130] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  303.565354] init: Service 'audioserver' (pid 2643) exited with status 127
+[  303.573130] init: Sending signal 9 to service 'audioserver' (pid 2643) process group...
+[  303.582447] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2643 in 0ms
+[  303.591786] init: updatable process 'audioserver' exited 4 times before boot completed
+[  303.601783] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2572) process group...
+[  303.617529] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2572 in 5ms
+[  303.627426] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  307.517011] type=1400 audit(1686705781.410:379): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  307.539615] type=1400 audit(1686705781.410:380): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  307.563629] type=1400 audit(1686705781.410:381): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  307.587706] type=1400 audit(1686705781.411:382): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  307.608112] type=1400 audit(1686705781.411:383): avc: denied { setattr } for comm="sensors@2.0-ser" name="UD$""sockfs" ino=68888 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  307.632021] type=1400 audit(1686705781.411:384): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  307.652212] tyre=1400 audit(1686705781.411:385): avc: denied { connect } for comm="sensors@2.0-ser" lport=1502 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  307.673664] type=1400 audit(1686705781.411:386): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=1502 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  307.698875] type=1400 audit(1686705781.411:387): avc: denied { getopt } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=1502 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  308.276551] sysrq: Show Blocked State
+[  308.280962] task:kworker/u8:5    state:D stack:    0 pid:  219 ppid:     2 flags:0x00004000
+[  308.290388] Workqueue: dmKbow_write
+[  308.294772] Call Trace:
+[  308.297556]  __schedule+0x640/0x9f0
+[  308.301511]  ? prepare_tou0xb3/0xd0
+[  308.305943]  ? schedule+0xa1/0xe0
+[  308.309732]  ? io_schedule+0x46/0x60
+[  308.314152]  ? bit_wait_io+0x11/0x50
+[  308.318512]  ? __wait_on_bit+0x74/0xd0
+[  308.322756]  ? bit_wait_io_timeout.cfi_jt+0x8/0x8
+[  308.328082]  ? out_of_line_wait_on_bit+0x92/0xb0
+[  308.333528]  ? ep_poll_callback+0x8/0x8
+[  308.337898]  ? dm_bufio_write_dirty_buffers+0x1fb/0x3d0
+[  308.343897]  ? copy_data+0x206/0x270
+[  308.347980]  ? set_type+0x1e6/0x200
+[  308.352339]  ? _raw_spin_lock+0x1f/0x30
+[  308.356664]  ? newidle_balance+0x2ce/0x3a0
+[  308.361311]  ? prepare_unchanged_range+0x156/0x270
+[  308.366724]  ? pick_next_task_fair+0x4a/0x7f0
+[  308.371622]  ? dequeue_task_fair+0x253/0x790
+[  308.376443]  ? __schedule+0x640/0x9f0
+[  308.380565]  ? schedule+0xa1/0xe0
+[  308.384304]  ? worker_thread+0x3b8/0x500
+[  308.388742]  ? mtrr_rendezvous_handler+0x8/0x8
+[  308.393866]  ? kthread+0x199/0x1b1
+[ &r ? get_clock+0x8/0x8
+[  308.401886]  ? ret_from_fork+0x22/0x30
+[  308.406716] sysrq: Show backtrace of all active CPUs
+[  308.412376] NMI backtrace for cpu 0
+[  308.416662] CPU: 0 PID: 1267 Comm: watchdog Tainted: G     U            5.10.100-gdf8cc6fd8285-dirty #18
+[  308.427275] Hardware name: cube i1-TF/Cherry Trail CR,!BIOS 5.11 05/13/2016
+[  308.435069] Call Trace:
+[  308.437811]  dump_stack_lvl+0x8a/0xda
+[  308.441;11]   ethnl_set_debug.cfi_jt+0x10/0x10
+[  308.446990]  nmi_trigger_cpumask_backtrace+0x116/0x190
+[  308.452749]  ? noop_send_IPI_allbutself+0x8/0x8
+[  308.457828]  sysrq_handle_showallcpus+0x1e/0x20
+[  308.462905]  __handle_sysrq+0x14c/0x190
+[  308.467205]  write_sysrq_trigger+0x3e/0x60
+[  308.471795]  ? sg_proc_write_dressz+0x8/0x8
+[  308.476485]  proc_reg_write+0x97/0x160
+[  308.480690]  ? sdhci_set_power_noreg.cfi_jt+0x8/0x8
+[  308.486155]  ? snd_compr_write+0x8/0x8
+[  308.490358]  vfs_write+0x17a/0x4f0
+[  308.494174]  ? __might_sleep+0x4a/0x80
+[  308.498382]  ? __x64_sys_waitpid.cfi_jt+0x8/0x8
+[  308.503459]  ksys_write+0x78/0xe0
+[  308.507177]  ? __x64_sys_waitpid.cfi_jt+0x8/0x8
+[  308.512255]  __x64_sys_write+0x1b/0x20
+[  308.516458]  do_syscall_64+0x56/0x90
+[  308.520469]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[  308.526127] RIP: 0033:0x7d8210eb51f7
+[  308.530136] Code: 00 00 00 b8 00 00 00 00 0f 05 48 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 08 fb ff ff c3 0f 1f 80 00 00 00 00 b8 01 00 00 00 0f 05 <48> 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 e8 fa ff ff c3 0f 1f 80 00
+[  308.539428] init:0starting service 'audioserver'...
+[  308.551137] RSP: 002b:00007d7f2508c508 EFLAGS: 00000213 ORIG_RAX: 0000000000000001
+[  308.5=1144] RAY: ffffffffffffffda RBX: 00000000000000b5 RCX: 00007d8210eb51f7
+[  308.551146] RDX: 0000000000000001 RSI: 00007d8100c84530 RDI: 00000000000000b5
+[  308.551148] RBP: 0000000000000000 R08: ffffffffffffffff R09: 0000000000000010
+[  308.551151] R10: 0000000070e522b0 R11: 0000000000000213 R12: 0000000012ee1f58
+[  308.551153] R13: 0000000000000001 R14: 00007d7fa0d23fd0 R15: 0000000070e064b8
+[  308.551347] Sending NMI from CPU 0 to CPUs 1-3:
+[  308.560700] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  308.562583] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  308.565489] NMI backtrace for cpu 2 skipped: idling at acpi_processor_ffh_cstate_enter+0x80/0xc0
+[  308.565626] NMI backtrace for cpu 3
+[  308.565628] CPU: 3 PID: 314 Comm: kworker/u9:1 Tainted: G     U            5.10.100-gdf8cc6fd8285-dirty #18
+[  308.565630] Hardware name: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/13/2016
+[  308.565631] Workqueue: i915_flip intel_atomic_commit_work
+[  308.565635] RIP: 0010:_raw_spin_lock_irqsave+0x31/0x70
+[  308.565637] Code: 89 e5 41 56 53 48 83 ec 10 49 89 fe 65 48 8b 04 25 28 00 00 00 48 89 45 e8 48 c7 45 e0 00 00 00 00 9c 8f 45 e0 48 8b 5d e0 fa <f7> s3 00 02 00 00 74 05 e8 12 3b c7 fe bf 01 00 00 00 e8 18 94 b8
+[  308.565638] RSP: 0018:ffff9cca009f3bf0 EFLAGS: 00000086
+[  308.565641] RAX: 1beae7a23a017a00 RBX: 0000000000000086 RCX: fffv9a9eb69aeb88
+[  308.565642] RDX: 0000000000000000 RSI: 0000000000000003 RDI: ffff9a9e452864c8
+[  308.565647] RBP: fff9cca009f3c10 R08: 001b7a201af47c00 R09: 00000047f49f6187
+[  308.565651] R10: 0000000000000000 R11: ffffffff9f4120e0 R12: ffff9a9e43594dc0
+[  308.565654] R13: 0000000000000000 R14: ffff9a9e452864c8 R15: ffff9a9e452864c8
+[  308.565657] FS:  0000000000000000(0000) GS:ffff9a9eb6980000(0000) knlGS:0000000000000000
+[  308.565660] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  308.565664] CR2: 00007ff42ec2d290 CR3: 800000000c862000 CR4: 00000000001006e0
+[  308.565667] Call Trace:
+[  308.565670]  try_to_wake_up.llvm.12354881101951622356+0x56/0x620
+[  308.565673]  ? _raw_spin_lock_irq+0x4c/0x70
+[  308.565676]  ? _raw_spin_lock_irqsave+e/0x70
+[  308.565679]  __queue_work+0x3b9/0x490
+[  308.565682]  queue_work_on+0x65/0xb0
+[  308.565685]  intel_atomic_commit_tail+0x1f4c/0x2250
+[  308.565688]  ? common_interrupt+0x16b/0x260
+[  308.565691]  ? create_any_midi_quirk+0x10/0x10
+[  308.565694]  ? create_any_midi_quirk+0x10/0x10
+[  308.565697]  ? _raw_spin_unlock_irq+0x13/0x40
+[  308.565700]  ? timer_update_keys+0x8/0x8
+[  308.565703]  intel_atomic_commit_work+0x12/0x20
+[  308.565706]  process_one_work+0x275/0x470
+[  308.565709]  worker_thread+0x260/0x5R[  308.565712]  ? _raw_spin_unlock_irqrestore+0x32/0x50
+[  308.565715]  ? mtrr_rendezvous_handler+0x8/0x8
+[  308.565718]  kthread+0x199/0x1b0
+[  308.565721]  ? get_clock+0x8/0x8
+[  308.565724]  ret_from_fork+0x22/0x30
+[  308.566456] NMI backtrace for cpu 1
+[  308.566459] CPU: 1 PID: 1 Comm: init Tainted: G     U            5.10.100-gdf8cc6fd8285-dirty #18
+[  308.566460] Hardware name: cube i1-TF/Cherry Trail CR, BIOS 5.11 05/13/2016
+[  308.566t62] RIP: 0010:io_serial_out+0x19/0x20
+[  308.566464] Code: 00 00 d3 e2 03 57 18 ec 0f b6 c0 5d c3 00 00 cc cc 0f 1f 44 00 00 55 48 89 e5 8a 8f c9 00 00 00 d3 e6 89 d0 03 77 18 89 f2 ee <5d> c3 00 00 cc cc 00 0f 1f 44 00 00 55 48 89 e5 41 57 41 56 53 48
+[  308.566466] RSP: 0018:ffff9cca0005fa08 EFLAGS: 00000002
+[  308.566469] RAX: 0000000000000020 RBX: ffffffffa245d090 RCX: 0000000000000000
+[  308.566470] RDX: 00000000000003f8 RSI: 00000000000003f8 RDI: ffffffffa245d090
+[  308.566472] RBP: ffff9cca0005fa08 R08: 66666666203a5841 R09: 6666666666666666
+[  &rR10: 5842522061646666 R11: ffffffff9f4304d8 R12: 0000000000000001
+[  308.566474] R13: 0000000000000000 R14: 0000000000000020 R15: ffffffff9f4304d8
+[  308.566476] FS:  00007ff5cfb46ff8(0000) GS:ffff9a9eb6880000(0000) knlGS:0000000000000000
+[  308.566477] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  308.566478] CR2: 00007ff5cfb47868 CR3: 0000000003046000 CR4: 00000000001006e0
+[  308.566479] Call Trace:
+[  308.566480]  serial8250_console_putchar+0x49/0x70
+[ !308.566482]  ? perf_trace_intel_pch_fifo_underrun+0x8/0x8
+[  308.566483]  uart_console_write+0x73/0xd0
+[  308.566484]  serial8250_console_write+0x4bf/0x6c0
+[  308.566485]  ? early_dbgp_write+0x8/0x8
+[  308.566486]  univ8250_console_write+0x21/0x30
+[  308.566487]  console_unlock+0x49d/0x?30
+[  308.566488]  ? vprintk_emit+0x18d/0x2a0
+[  308.566489]  vprintk_emit+0xf0/0x2a0
+[  308.566490]  devkmsg_emit+0x5a/0x75
+[  308.566491]  devkmsg_write+0x120/0x180
+[  308.566492]  ? hung_up_tty_read+0x8/0x8
+[  308.566494  do_iter_readv_writev+0x1b2/0x210
+[  308.566495]  do_iter_write+0x8d/0x200
+[  308.566496]  do_writev+0x213/0x370
+[  308.566497]  ? __x64_sys_lchown16.cfi_jt+0x8/0x8
+[  308.566498]  __x64_sys_writev+0x1f/0x30
+[  308.566499]  do_syscall_64+0x56/0x90
+[  308.566500]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+[  308.566501] RIP: 0033:0x7ff5cf0ff497
+[  308.566504] Code: 00 00 00 b8 13 00 00 00 0f 05 48 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 68 f8 nf ff 3 0f 1f 80 00 00 00 00 b8 14 00 00 00 0f 05 <48> 3d 01 f0 ff ff 72 09 f7 d8 89 c7 e8 48 f8 ff ff c3 0f 1f 80 00
+[  308.566505] RSP: 002b:00007fffab635788 EFLAGS: 00000287 ORIG_RAX: 0000000000000014
+[  308.566508] RAX: ffffffffffffffda RBX: 00007fffab635790 RCX: 00007ff5cf0ff497
+[  308.566509] RDX: 0000000000000001 RSI: 00007fffab635790 RDI: 0000000000000003
+[  308.566511] RBP: 0000000000000006 R08: 0000000000000010 R09: 00007fffab635750
+[  308.566512] R10: 00000000fffffffe R11: 0000000000000287 R12: 00007fffab6357a0
+[  308.566513] R13: 0000561139b20310 R14: 00007fg5cf772ff1 R15: 00000000ffffffff
+[  309.145775] init: Service 'audioserver' (pid 2654) exited with status 127
+[  309n153506] init: Sending signal 9 to service 'audioserver' (pid 2654) process group...
+[  309.163196] libprocessgro] Successfully killed process cgroup uid 1041 pid 2654 in 0ms
+[  309.172569] init: updatable process 'audioserver' exited 4 times before boot completed
+[  309.182458] init: Sending signal 9 to service 'vendor.audio-hal'((pid"2644) process group...
+[  309.198048] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2644 in 5ms
+[  309.208078] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  311.870173] type=1400 audit(168670MrJ
+ denied { write } for comm="main" name="tasks" dev="tmpfs" ino=571 scontext=u:r:zygote:s0 tcontext=u:object_r:device:s0 tclass=file permissive=1
+[  312.52042;] type=1400 audit(1686705786.412:400): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" iu:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  312.543216] type=1400 audit(1686705786.412:401): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  312.567459] type=1400 audit(1686705786.412:402): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  312.595115] type=1400 audit(1686705786.413:403): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  312.615817] type=1400 audit(1686705786.413:404): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=69286 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  312.639692] type=1400 audit(1686705786.413:405): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_defaultzs0 tclass=udp_socket permissive=1
+[  312.660305] type=1400 audit(1686705786.413:406): avc: denied { name_bind } for comm="sensors@2.0-ser" src=26504 scntext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  312.681318] type=14p0 audit(1686705786.413:407): avc: denied { node_bind } for comm="sensors@2.0-ser" src=26504 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  312.702239] type=1400 audit(1686705786.41s:408J'
+ denied { connect } for comm="sensors@2.0-ser" lport=26504 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  312.723753] type=1400 audit(1686705786.413:409): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=26504 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  312.840968] apexd: Can't open /system_ext/apex for reading : No such file or directory
+[  312.850230] apexd: Can't open /product/apex for reading : No such file or directory
+[  312.859164] apexd: Can't open /vendor/apex for reading : No such file or directory
+[  313.561444] init: starting service 'audioserver'...
+[  313.578783] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  313.579727]init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  313.605990] init: SeWk'audioserver' (pid 2760) exited with status 127
+[  313.613734] init: Sending signal 9 to service 'audioserver' (pid 2760) process group...
+[  313.623541] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2760 in 0ms
+[  313.633147] init: updatable process 'audioserver' exited 4 times before boot completed
+[  313.642964] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2656) process group...
+[  313.657966] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2656 in 5ms
+[  313.667767] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  314.124158] healthd: battery l=1 v=3660 t=0.0 h=2 st=3 c=-304000 fc=3498768 chg=
+[  315.333560] AidlLazyServiceRegistrar: Process has 1 (of 1 available) client(s) iafter notification android.apex.IApexService has clients: 1
+[  315.348514] AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification android.apex.IApexService has clients: 0
+[  315.363364] AidlLazyServiceRegistrar: Shutdown prevented by forcePersist override flag.
+[  317.521390] type=1400 audit(1686705791.415:418): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  317.544084] type=1400 audit(1686705791.415:419): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  317.567787] type=1400 audit(1686705791.415:420): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  317.592011] type=1400 audit(1686705791.415:421): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  317.612464] type=1400 audit(1686705791.415:422): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=72778 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  317.636270] type=1400 audit(1686705791.415:423): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  317.656914] type=1400 audit(1686705791.415:424): avc: denied { name_bind } for comm="sensors@2.0-ser" src=21209 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  317.678084] type=1400 audit(1686705791.415:425): avc: denied { node_bind } for comm="sensors@2.0-ser" src=21209 scontext=u:r:hal_sensors_defaulu:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  317.699037] type=1400 audit(1686705791.415:426): avc: denied { connect } for comm="sensors@2.0-ser" lport=21209 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  317.721119] type=1400 audit(1686705791.415:427): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=21209 faddr=127.0.0.1 fport=53 scontext=u:r:hal_wensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  318.577326] init: starting service 'audioserver'...
+[  318.593046] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  318.595804] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  318.620089] init: Service 'audioserver' (pid 2929) exited with status 127
+[  318.628137] init: Sending signal 9 to service 'audioserver' (pid 2929) process group...
+[  318.637393] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2929 in 0ms
+[  318.646750] init: updatable process 'audioserver' exited 4 times before boot completed
+[  318.656515] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2772) process group...
+[  318.671628] libprocessgroup: Successfully killed process cgroup uZR2772 in 5ms
+[  318.681935] init: Command 'restart vendor.audio-hal-4-0-msd' action=onrestart (<Service 'audioserver' onrestart>:2) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  319.023351] binder: undelivered transaction 44174, process died.
+[  322.523488] type=1400 audit(1686705796.417:431): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  322.546182] type=1400 audit(1686705796.417:432): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  322.570018] type=1400 audit(1686705796.417:433): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  322.594003] type=1400 audit(1686705796.417:434): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  322.614290] type=1400 audit(1686705796.417:435): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=72846 scontext=u:r:hal_sensors_defaul.u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  322.638058] type=1400 audit(16867057;6.417:436): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  322.658151] type=1400 audit(1686705796.417:437): avc: denied { name_bind } for comm="sensors@2.0-ser" src=31399 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  322.679023] type=1400 audit(1686705796.417:438): avc: denied { node_bind } for comm="sensors@2.0-ser" src=31399 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  322.699878] type=1400 audit(1686705796.417:439): avc: denied { connect } for comm="sensors@2.0-ser" lport=31399 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  322.721467] type=1400 audit(1686705796.417:440): avc: deniYwrite } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=31399 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  323.593561] init: starting service 'audioserver'...
+[  323.608734] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  323.610195] init: cannot execv('/system/bin/audioserver'). See thY:"init' section of init's README.md for tips: Operation not permitted
+[  323.621274] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  323.654365] init: Service 'audioserver' (pid 2946) exited with status 127
+[  323.662216] init: Sending signal 9 to service 'audioserver' (pid 2946) process group...
+[  323.672310] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2946 in 0ms
+[  323.682009] init: updatable process 'audioserver' exited 4 times before boot completed
+[  323.692265] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2936) process group...
+[  323.708212] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2936 in 6ms
+[  327.525979] type=1400 audit(168rJ
+ denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  327.548743] type=1400 audit(1686705801.419:443): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  327.572474] type=1400 audit(1686705801.419:444): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  327.596544] type=1400 audit(1686705801.420:445): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tcliss=udp_socket permissive=1
+[  327.617323] type=1400 audit(1686705801.420:446): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=72895 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  327.641189] type=1400 audit(1686705801.420:447): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  327.661566] type=1400 audit(1686705801.420:448): avc: denied { name_bind } for comm="sensors@2.0-ser" src=20075 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  327.682435] type=1400 audit(1686705801.420:449): avc: denied { node_bind } for comm="sensors@2.0-ser" src=20075 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  327.703242] type=1400 audit(1686705801.420:450): avc: denied { connect } for comm="sensors@2.0-ser" lport=20075 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  327.724797] type=1400 audit(1686705801.420:451): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=20075 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  328.608570] init: starting service 'audioserver'...
+[  328.617977] init: processi
+(init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  328.620617] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  328.630156] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  328.665135] init: Service 'audioserver' (pid 2959) exited with status 127
+[  328.673210] init: Sending signal 9 to service 'audioserver' (pid 2959) process group...
+[  328.682475] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2959 in 0ms
+[  328.691872] init: updatable process 'audioserver' exited 4 times before boot completed
+[  328.701647] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2948) process group...
+[  328.716936] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2948 in 5ms
+[  332.529093] type=1400 audit(1686705806.421:456): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  332.552178] type=1400 audit(1686705806.421:457): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  332.577106] type=1400 audit(1686705806.421:458): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  332.601127] type=1400 audit(1686705806.421:459): avc: denied { name_bind } for comm="sensors@2.0-ser" src=2848 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:port:s0 tclass=udp_socket permissive=1
+[  332.621896] type=1400 audit(1686705806.421:460): avc: denied { node_bind } for comm="sensors@2.0-ser" src=2848 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+[  333.621620] init: starting service 'audioserver'...
+[  333.631226] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  333.632396] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md for tips: Operation not permitted
+[  333.642609] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/audioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  333.677286] init: Service 'audioserver' (pid 3357) exited with status 127
+[  333.685214] init: Sending signal 9 to service 'audioserver' (pid 3357) process group...
+[  333.695045] libprocessgroup: Successfully killed process cgroup uid 1041 pid 3357 in 0ms
+[  333.704774] init: updatable process 'audioserver' exited 4 times before boot completed
+[  333.714961] init: Sending signal 9 to service 'vendor.audio-hal' (pid 2961) process group...
+[  333.731045] libprocessgroup: Successfully killed process cgroup uid 1041 pid 2961 in 5ms
+[  337.529409] type=1400 audit(1686705811.423:461): avc: denied { read } for comm="sensors@2.0-ser" name="hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  337.552015] type=1400 audit(1686705811.423:462): avc: denied { open } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  337.575830] type=1400 audit(1686705811.423:463): avc: denied { getattr } for comm="sensors@2.0-ser" path="/system/etc/hosts" dev="dm-4" ino=665 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+[  337.600269] type=1400 audit(1686705811.423:464): avc: denied { create } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  337.621187] type=1400 audit(1686705811.423:465): avc: denied { setattr } for comm="sensors@2.0-ser" name="UDP" dev="sockfs" ino=92717 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  337.645072] type=1400 audit(1686705811.423:466): avc: denied { bind } for comm="sensors@2.0-ser" scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  337.666267] type=1400 audit(1686705811.423:467): avc: denied { connect } for comm="sensors@2.0-ser" lport=9306 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  337.687953] type=1400 audit(1686705811.423:468): avc: denied { write } for comm="sensors@2.0-ser" laddr=127.0.0.1 lport=9306 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  337.713512] type=1400 audit(1686705811.423:469): avc: denied { getopt } for comm="sensors@2.0-ser"+127.0.0.1 lport=9306 faddr=127.0.0.1 fport=53 scontext=u:r:hal_sensors_default:s0 tcontext=u:r:hal_sensors_default:s0 tclass=udp_socket permissive=1
+[  338.633580] init: starting service 'audioserver'...
+[  338.643177] init: processing action (init.svc.audioserver=running) from (/system/etc/init/audioserver.rc:35)
+[  338.644463] init: cannot execv('/system/bin/audioserver'). See the 'Debugging init' section of init's README.md!for tips: Operation not permitted
+[  338.654510] init: Command 'start vendor.audio-hal-4-0-msd' action=init.svc.audioserver=running (/system/etc/init/qudioserver.rc:37) took 0ms and failed: service vendor.audio-hal-4-0-msd not found
+[  338.688548] init: Service 'audioserver' (pid 3512) exited with status 127
+[  338.696212] init: Sending signal 9 to service 'audioserver' (pid 3512) process group...
+[  338.705470] libprocessgroup: Successfully killed process cgroup uid 1041 pid 3512 in 0os
+[  338.714700] init: updatable process 'audioserver' exited 4 times before boot completed
+[  338.724367] init: Sending signal 9 to service 'vendor.audio-hal' (pid 3378) process group...
+[  338.739556] libprocessgroup: Successfully killed process cgroup uid 1041 pid 3378 in 5ms
+
