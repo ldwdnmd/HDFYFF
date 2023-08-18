@@ -1,0 +1,156 @@
+--------- beginning of main
+08-14 08:07:43.693  2840  2840 W auditd  : type=2000 audit(0.0:1): initialized
+08-14 08:07:52.094  2840  2840 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+08-14 08:07:52.170     1     1 I init    : type=1400 audit(0.0:3): avc: denied { mounton } for path="/proc/sys/fs/binfmt_misc" dev="proc" ino=10368 scontext=u:r:init:s0 tcontext=u:object_r:proc:s0 tclass=dir permissive=1
+08-14 08:07:52.610     1     1 I init    : type=1400 audit(0.0:4): avc: denied { create } for name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+08-14 08:07:52.772  2817  2817 I e2fsck  : type=1400 audit(0.0:5): avc: denied { read } for name="mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+08-14 08:07:52.773  2817  2817 I e2fsck  : type=1400 audit(0.0:6): avc: denied { open } for path="/dev/block/mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+08-14 08:07:52.773  2817  2817 I e2fsck  : type=1400 audit(0.0:7): avc: denied { write } for name="mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+08-14 08:07:52.773  2817  2817 I e2fsck  : type=1400 audit(0.0:8): avc: denied { ioctl } for path="/dev/block/mmcblk0p12" dev="tmpfs" ino=10408 ioctlcmd=127c scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+08-14 08:07:53.210  2830  2830 I e2fsck  : type=1400 audit(0.0:9): avc: denied { dac_override } for capability=1 scontext=u:r:fsck:s0 tcontext=u:r:fsck:s0 tclass=capability permissive=1
+08-14 08:07:53.318  2839  2839 I mkswap  : type=1400 audit(0.0:10): avc: denied { read write } for name="zram0" dev="tmpfs" ino=846 scontext=u:r:toolbox:s0 tcontext=u:object_r:ram_device:s0 tclass=blk_file permissive=1
+08-14 08:07:53.318  2839  2839 I mkswap  : type=1400 audit(0.0:11): avc: denied { open } for path="/dev/block/zram0" dev="tmpfs" ino=846 scontext=u:r:toolbox:s0 tcontext=u:object_r:ram_device:s0 tclass=blk_file permissive=1
+08-14 08:07:53.672     1     1 I init    : type=1400 audit(0.0:14): avc: denied { write } for name="cgroup" dev="sysfs" ino=3 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+08-14 08:07:53.672     1     1 I init    : type=1400 audit(0.0:15): avc: denied { add_name } for name="cpuset" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+08-14 08:07:53.672     1     1 I init    : type=1400 audit(0.0:16): avc: denied { create } for name="cpuset" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+08-14 08:07:53.781  2849  2849 I         : debuggerd: starting
+08-14 08:07:53.820  2850  2850 I         : debuggerd: starting
+08-14 08:07:53.848  2848  2848 I logcat  : type=1400 audit(0.0:17): avc: denied { dac_override } for capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+08-14 08:07:53.848  2848  2848 I logcat  : type=1400 audit(0.0:18): avc: denied { write } for name="/" dev="mmcblk0p12" ino=2 scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=dir permissive=1
+08-14 08:07:53.848  2848  2848 I logcat  : type=1400 audit(0.0:19): avc: denied { add_name } for name="logcat.log" scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=dir permissive=1
+08-14 08:07:53.848  2848  2848 I logcat  : type=1400 audit(0.0:20): avc: denied { create } for name="logcat.log" scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=file permissive=1
+08-14 08:07:53.849  2848  2848 I logcat  : type=1400 audit(0.0:21): avc: denied { append open } for path="/cache/logcat.log" dev="mmcblk0p12" ino=11 scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=file permissive=1
+--------- beginning of system
+08-14 08:07:53.893  2851  2851 I vold    : Vold 3.0 (the awakening) firing up
+08-14 08:07:53.895  2851  2851 V vold    : Detected support for: exfat ext4 ntfs vfat
+08-14 08:07:53.927  2851  2903 D vold    : e4crypt_init_user0
+08-14 08:07:53.927  2851  2903 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/system/users/0
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/misc/profiles/cur/0
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/misc/profiles/cur/0/foreign-dex
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/system_de/0
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/misc_de/0
+08-14 08:07:53.928  2851  2903 D vold    : Preparing: /data/user_de/0
+08-14 08:07:53.928  2851  2903 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+08-14 08:07:53.928  2851  2903 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+08-14 08:07:53.928  2851  2903 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+08-14 08:07:53.929     1     1 I vdc     : 200 2852 Command succeeded
+08-14 08:07:53.967  2904  2904 I /system/bin/tzdatacheck: tzdata file /data/misc/zoneinfo/current/tzdata does not exist. No action required.
+08-14 08:07:53.988  2910  2910 I init    : type=1400 audit(0.0:22): avc: denied { execute_no_trans } for path="/system/bin/sh" dev="mmcblk0p11" ino=32903 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+08-14 08:07:53.988  2911  2911 I init    : type=1400 audit(0.0:23): avc: denied { create } for name="keymaster_mei" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+08-14 08:07:53.988  2911  2911 I init    : type=1400 audit(0.0:24): avc: denied { setattr } for name="keymaster_mei" dev="tmpfs" ino=10915 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+08-14 08:07:53.992     1     1 I init    : type=1400 audit(0.0:25): avc: denied { sys_module } for capability=16 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+08-14 08:07:53.992     1     1 I init    : type=1400 audit(0.0:26): avc: denied { module_load } for path="/system/lib/modules/hid-sensor-hub.ko" dev="mmcblk0p11" ino=98634 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=system permissive=1
+08-14 08:07:53.995  2912  2912 I init    : type=1400 audit(0.0:27): avc: denied { execute_no_trans } for path="/system/vendor/bin/intel_prop" dev="mmcblk0p11" ino=73888 scontext=u:r:init:s0 tcontext=u:object_r:system_file:s0 tclass=file permissive=1
+08-14 08:07:53.999     1     1 I init    : type=1400 audit(0.0:28): avc: denied { sys_module } for capability=16 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=capability permissive=1
+08-14 08:07:54.034  2913  2913 I lowmemorykiller: Using in-kernel low memory killer interface
+08-14 08:07:54.061  2911  2911 I ITEEKeyMasterD: Starting...
+08-14 08:07:54.104  2915  2915 I SurfaceFlinger: SurfaceFlinger is starting
+08-14 08:07:54.104  2915  2915 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+08-14 08:07:54.206  2923  2923 I chown   : type=1400 audit(0.0:29): avc: denied { setattr } for name="type" dev="sysfs" ino=13202 scontext=u:r:toolbox:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+08-14 08:07:54.206  2923  2923 I chown   : type=1400 audit(0.0:30): avc: denied { chown } for capability=0 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+08-14 08:07:54.237  2915  2915 D ufoEGL  : ENV OGL (64bit) enabled for all processes, use "setptop persist.intel.ogl.procname" to limit it to a single process
+08-14 08:07:54.243  2915  2915 D libEGL  : loaded /vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.260  2915  2915 I surfaceflinger: type=1400 audit(0.0:31): avc: denied { getattr } for path="/dev/dri/card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+08-14 08:07:54.260  2915  2915 I surfaceflinger: type=1400 audit(0.0:32): avc: denied { read write } for name="card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+08-14 08:07:54.261  2915  2915 I ufoGralloc: Hello, this is UFO GRALLOC/Intel Corporation
+08-14 08:07:54.261  2915  2915 I ufoGralloc:  ro.camera.rec.pixel_format = 0x10f (271)
+08-14 08:07:54.261  2915  2915 I ufoGralloc:  ro.ycbcr.pixel_format = 0x10f (271)
+08-14 08:07:54.260  2915  2915 I surfaceflinger: type=1400 audit(0.0:33): avc: denied { open } for path="/dev/dri/card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+08-14 08:07:54.260  2915  2915 I surfaceflinger: type=1400 audit(0.0:34): avc: denied { ioctl } for path="/dev/dri/card0" dev="tmpfs" ino=776 ioctlcmd=6400 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+08-14 08:07:54.285  2915  2915 E hwc     : Persistent registry load failed to open file /cache/hwc.reg
+08-14 08:07:54.286  2915  2915 E hwc     : Failed drmGetCap( 17 ), ret:0
+08-14 08:07:54.286  2915  2915 I hwc     : NOT AVAILABLE: DMR/KMS Render Compression support
+08-14 08:07:54.285  2915  2915 I surfaceflinger: type=1400 audit(0.0:35): avc: denied { write } for name="i915_videostatus" dev="sysfs" ino=10858 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+08-14 08:07:54.288  2915  2915 D hwc     : DRM connector 29 Panel CONNECTED DynamicMode:0 SeamlessDRRS:0 PanelFitter:1 DPMS:1
+08-14 08:07:54.289  2915  2915 D hwc     : DisplayCaps creating caps for device 0x22b0 pipe 0
+08-14 08:07:54.289  2915  2915 I hwc     : DisplayCaps construct Baytrail class caps for display pipe 0
+08-14 08:07:54.289  2915  2915 D hwc     : Selected mode for Connector:29 [Connector 0x7fd3a6672180 Connected, CrtcID 6, PipeIdx 0] is Mode:0 1536x2048 60Hz Preferred 235.7MHz (1896x2072)
+08-14 08:07:54.289  2915  2915 I libva   : VA-API version 0.99.0
+08-14 08:07:54.289  2915  2915 I libva   : va_getDriverName() returns 0
+08-14 08:07:54.289  2915  2915 I libva   : Trying to open /vendor/lib64/i965_drv_video.so
+08-14 08:07:54.304  2915  2915 I libva   : Found init function __vaDriverInit_0_32
+08-14 08:07:54.305  2915  2936 D ufo     : Detected device 22B0:32 family 17:11
+08-14 08:07:54.305  2915  2936 E ufoGralloc: failed to perform fallocate (0, 0, 12582912), -38/Function not implemented
+08-14 08:07:54.305  2915  2936 E ufoGralloc: perform(33) failed, -38/Function not implemented
+08-14 08:07:54.306  2915  2936 E grallocClient: fallocate(0x7fd3a6a372d0) failed, -38/Function not implemented
+08-14 08:07:54.306  2915  2936 E hwc     : Fallocate not implemented. Expect a higher memory footprint until its supported
+08-14 08:07:54.311  2915  2915 I libva   : va_openDriver() returns 0
+08-14 08:07:54.320  2915  2936 D hwc     : Testing Drm atomic API
+08-14 08:07:54.339  2915  2936 D hwc     : Drm atomic API is available
+08-14 08:07:54.348  2937  2937 I sysinit : Running /system/etc/init.d/00banner 
+08-14 08:07:54.369  2915  2915 V IVP     : iVP_create_context: Create Context success: ctx_id=0x70000000, vp_context=0x7fd3a66401c0
+08-14 08:07:54.369  2915  2915 D ufoEGL  : droid_create_context : config id = 1 conf->NativeVisualID=1
+08-14 08:07:54.369  2915  2915 I ufoEGL  : Requested context : GLES 2.0
+08-14 08:07:54.396  2915  2915 I         : GL_VERSION: OpenGL ES 3.1 - Build 4.70.60868-R
+08-14 08:07:54.396  2915  2915 I         : GL_SHADING_LANGUAGE_VERSION: OpenGL ES GLSL ES 3.10 - Build 4.70.60868-R
+08-14 08:07:54.397  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.397  2912  2912 W intel_props: Cannot set sys.ia32.version from BiosVersion of type dmi_is 
+08-14 08:07:54.398  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.398  2912  2912 W intel_props: Cannot set sys.chaabi.version from SECVersion of type dmi_is 
+08-14 08:07:54.399  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.399  2912  2912 W intel_props: Cannot set sys.pmic.version from PmicVersion of type dmi_is 
+08-14 08:07:54.399  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.399  2912  2912 W intel_props: Cannot set sys.pmc.version from PMCVersion of type dmi_is 
+08-14 08:07:54.400  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.400  2912  2912 W intel_props: Cannot set sys.punit.version from PUnitVersion of type dmi_is 
+08-14 08:07:54.401  2912  2912 E libdmi  : Unsupported vendor 'Byosoft Corporation'
+08-14 08:07:54.401  2912  2912 W intel_props: Cannot set sys.gop.version from GopVersion of type dmi_is 
+08-14 08:07:54.435  2939  2939 I cm      : _ _                                        
+08-14 08:07:54.444  2940  2940 I cm      : | (_)_ __   ___  __ _  __ _  ___  ___  ___  
+08-14 08:07:54.453  2941  2941 I cm      : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __| 
+08-14 08:07:54.463  2942  2942 I cm      : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \ 
+08-14 08:07:54.472  2943  2943 I cm      : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/ 
+08-14 08:07:54.481  2944  2944 I cm      :                       |___/ 
+08-14 08:07:54.506  2947  2947 I cm      : Welcome to Android 7.1.2 / LineageOS-14.1-20230814-UNOFFICIAL-latte 
+08-14 08:07:54.516  2948  2948 I sysinit : Running /system/etc/init.d/90userinit 
+08-14 08:07:54.647  2915  2915 D ufoEGL  : Pixel Format : GGL_PIXEL_FORMAT_RGBA_8888
+--------- beginning of crash
+08-14 08:07:54.656  2915  2915 F libc    : Fatal signal 11 (SIGSEGV), code 1, fault addr 0x8 in tid 2915 (surfaceflinger)
+08-14 08:07:54.656  2850  2850 W         : debuggerd: handling request: pid=2915 uid=1000 gid=1003 tid=2915
+08-14 08:07:54.660  2950  2950 E         : debuggerd: Unable to connect to activity manager (connect failed: No such file or directory)
+08-14 08:07:54.660  2950  2950 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+08-14 08:07:54.660  2950  2950 F DEBUG   : LineageOS Version: '14.1-20230814-UNOFFICIAL-latte'
+08-14 08:07:54.660  2950  2950 F DEBUG   : Build fingerprint: 'Xiaomi/latte/latte:5.1/LMY47I/V8.2.2.0.LACCNDL:user/release-keys'
+08-14 08:07:54.660  2950  2950 F DEBUG   : Revision: '0'
+08-14 08:07:54.660  2950  2950 F DEBUG   : ABI: 'x86_64'
+08-14 08:07:54.660  2950  2950 F DEBUG   : pid: 2915, tid: 2915, name: surfaceflinger  >>> /system/bin/surfaceflinger <<<
+08-14 08:07:54.660  2950  2950 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x8
+08-14 08:07:54.661  2950  2950 F DEBUG   :     rax 0000000000000000  rbx 00007fd3a67dc400  rcx 0000000000000010  rdx 0000000000000100
+08-14 08:07:54.661  2950  2950 F DEBUG   :     rsi 00007fd3a64d8740  rdi 0030306100007f00
+08-14 08:07:54.661  2950  2950 F DEBUG   :     r8  0000000000000010  r9  0000000000000000  r10 00007fd3a64d8740  r11 0000000000000000
+08-14 08:07:54.661  2950  2950 F DEBUG   :     r12 00007fd3a6a26980  r13 0000000000000001  r14 00007fd3a64d8740  r15 0000000000000001
+08-14 08:07:54.661  2950  2950 F DEBUG   :     cs  0000000000000033  ss  000000000000002b
+08-14 08:07:54.661  2950  2950 F DEBUG   :     rip 00007fd3a5d60bda  rbp 00007fffbeb190e0  rsp 00007fffbeb19070  eflags 0000000000010206
+08-14 08:07:54.687  2950  2950 F DEBUG   : 
+08-14 08:07:54.687  2950  2950 F DEBUG   : backtrace:
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #00 pc 00000000001c1bda  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #01 pc 0000000000385a75  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #02 pc 0000000000386631  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #03 pc 0000000000395a05  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #04 pc 000000000039d077  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #05 pc 00000000001771eb  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #06 pc 0000000000522c13  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #07 pc 000000000052387b  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #08 pc 0000000000520554  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #09 pc 00000000001441b9  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #10 pc 00000000000dedc4  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #11 pc 00000000000dfd6d  /system/vendor/lib64/egl/libGLES_intel8.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #12 pc 00000000000e71e4  /system/vendor/lib64/egl/libGLES_intel8.so (eglMakeCurrent+740)
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #13 pc 0000000000012414  /system/lib64/libEGL.so (_ZN7android13egl_display_t11makeCurrentEPNS_13egl_context_tES2_PvS3_S3_S3_S3_S3_+260)
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #14 pc 0000000000015e40  /system/lib64/libEGL.so (eglMakeCurrent+432)
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #15 pc 0000000000055eeb  /system/vendor/lib64/hw/hwcomposer.gmin.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #16 pc 000000000005637d  /system/vendor/lib64/hw/hwcomposer.gmin.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #17 pc 00000000000564e2  /system/vendor/lib64/hw/hwcomposer.gmin.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #18 pc 000000000005cbcf  /system/vendor/lib64/hw/hwcomposer.gmin.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #19 pc 000000000002ba1e  /system/vendor/lib64/hw/hwcomposer.gmin.so
+08-14 08:07:54.687  2950  2950 F DEBUG   :     #20 pc 000000000005719a  /system/lib64/libsurfaceflinger.so
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #21 pc 0000000000056daa  /system/lib64/libsurfaceflinger.so
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #22 pc 00000000000445d5  /system/lib64/libsurfaceflinger.so
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #23 pc 0000000000047188  /system/lib64/libsurfaceflinger.so (_ZN7android14SurfaceFlinger4initEv+936)
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #24 pc 0000000000001366  /system/bin/surfaceflinger
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #25 pc 000000000001c9ec  /system/lib64/libc.so (__libc_init+108)
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #26 pc 0000000000001217  /system/bin/surfaceflinger
+08-14 08:07:54.688  2950  2950 F DEBUG   :     #27 pc 0000000000000000  <unknown>
+08-14 08:07:54.733  2850  2850 W         : debuggerd: resuming target 2915
+08-14 08:07:56.659  2914  2914 I ServiceManager: service 'hwc.info' died

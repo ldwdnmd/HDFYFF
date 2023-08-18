@@ -1,0 +1,579 @@
+=~=~=~=~=~=~=~=~=~=~=~= MobaXterm log 2023.08.14 16:06:47 =~=~=~=~=~=~=~=~=~=~=~=
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.14.79-lineageos (nmsl@nmsl-MS-7721) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Mon Aug 14 15:04:40 CST 2023
+[    0.000000] Command line: console=tty0 androidboot.bootreason=reboot androidboot.serialno=A3P462121948 g_ffs.iSerialNumber=A3P462121948 loglevel=7 androidboot.hardware=latte firmware_class.path=/system/etc/firmware i915.fastboot=1 vga=current i915.modeset=1 drm.vblankoffdelay=1 bootboost=1 pm_suspend_debug=1 pstore.backend=ramoops thermal.off=1 androidboot.selinux=permissive console=ttyUSB0,115200 buildvariant=eng
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000008efff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000008f000-0x000000000008ffff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x0000000000090000-0x000000000009dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x000000001effffff] usable
+[    0.000000] BIOS-e820: [mem 0x000000001f000000-0x00000000201fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000020200000-0x000000007afa6fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007afa7000-0x000000007b292fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007b293000-0x000000007b392fff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x000000007b393000-0x000000007b3d2fff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x000000007b3d3000-0x000000007b3d3fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007b3d4000-0x000000007b3d4fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007b3d5000-0x000000007b3d7fff] usable
+[    0.000000] BIOS-e820: [mem 0x000000007b3d8000-0x000000007b3d8fff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007b3d9000-0x000000007bffffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000e0000000-0x00000000e3ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fea00000-0x00000000feafffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed01000-0x00000000fed01fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed03000-0x00000000fed03fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed06000-0x00000000fed06fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed08000-0x00000000fed09fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed1c000-0x00000000fed1cfff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed80000-0x00000000fedbffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000017fffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.40 by EDK II
+[    0.000000] efi:  ACPI=0x7b3d2000  ACPI 2.0=0x7b3d2014  SMBIOS=0x7aff1000 
+[    0.000000] efi: mem00: type=7, attr=0xf, range=[0x0000000000000000-0x0000000000001000) (0MB)
+[    0.000000] efi: mem01: type=2, attr=0xf, range=[0x0000000000001000-0x0000000000002000) (0MB)
+[    0.000000] efi: mem02: type=7, attr=0xf, range=[0x0000000000002000-0x000000000008f000) (0MB)
+[    0.000000] efi: mem03: type=10, attr=0xf, range=[0x000000000008f000-0x0000000000090000) (0MB)
+[    0.000000] efi: mem04: type=7, attr=0xf, range=[0x0000000000090000-0x000000000009d000) (0MB)
+[    0.000000] efi: mem05: type=2, attr=0xf, range=[0x000000000009d000-0x000000000009e000) (0MB)
+[    0.000000] efi: mem06: type=0, attr=0xf, range=[0x000000000009e000-0x00000000000a0000) (0MB)
+[    0.000000] efi: mem07: type=2, attr=0xf, range=[0x0000000000100000-0x00000000003f9000) (2MB)
+[    0.000000] efi: mem08: type=7, attr=0xf, range=[0x00000000003f9000-0x0000000001000000) (12MB)
+[    0.000000] efi: mem09: type=2, attr=0xf, range=[0x0000000001000000-0x0000000002e7a000) (30MB)
+[    0.000000] efi: mem10: type=7, attr=0xf, range=[0x0000000002e7a000-0x000000001f000000) (449MB)
+[    0.000000] efi: mem11: type=0, attr=0xf, range=[0x000000001f000000-0x0000000020200000) (18MB)
+[  [    1.710433] get_battery_statu[    1.734935] i2c-core: driver [bq27520_battery] using legacy suspend method
+[    1.734945] i2c-core: driver [bq27520_battery] using legacy resume method
+[    1.750858] hwmon hwmon2: DEBUGFS wcove_bcu created successfully.
+[    1.752316] intel_powerclamp: Intel powerclamp does not run on family 6 model 76
+[    1.753365] int3400 thermal: probe of INT3400:00 failed with error -17
+[    1.761294] opregion: (LPAT) temp outside range!!
+[    1.761305] ACPI Exception: AE_ERROR, Returned by Handler for [UserDefinedRegion] (20131218/evregion-297)
+[    1.761319] ACPI Error[    1.776403] iTCO_wdt: Intel TCO WatchDog Timer Driver v1.11
+[    1.776493] iTCO_wdt: Found a Cherry Trail SoC TCO device (Version=3, TCOBASE=0x0460)
+[    1.776936] iTCO_wdt: initialized. [    1.778454] Bluetooth: HCI H4[    1.781325] mmc0: no vqmmc re[    1.786357] Successfully adde[    1.786762]  [<ffffffff8145b1[    1.821434] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.827502] usbcore: registered new interface driver usbhid
+[    1.827510] usbhid: USB HID core driver
+[    1.828277] i2c_hid i2c-ATML1000:00: hid_descr_cmd failed
+[    1.828597] usbcore: registered new interface driver r8712u
+[    1.828711] usbcore: registered new interface driver r8188eu
+[    1.829606] ashmem: initialized
+[    1.830078] fdp driver loaded
+[    1.830646] asus_wmi: Asus Management GUID not[    1.831512] asus_wmi: Managem[    1.834327] intel_warn_int: i
+[    1.884949] console [pstore-1] enabled
+[    1.885279] pstore: Registered ramoops as persistent store backend
+[    1.885311] ramoops: attached 0x400000@0x7c000000, ecc: 0/0
+[    1.885366] intel_pstore_pram: registered pram device, addr=0x7c000000, size=0x400000
+[    1.899555] wcove_gpadc wcove_gpadc: PMIC-ID: 1
+[    1.900252] wcove_gpadc wcove_gpadc: PMIC not provisioned
+[    1.902249] intel_rapl: RAPL domain uncore detection failed
+[    1.902287] intel_rapl: RAPL domain dram detection failed
+[    1.973643] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_probe start build time 14:26:58
+[    1.973747] s5k4h8yx i2c-SS5K0008:00: gmin: initializing atomisp module subdev data.PMIC ID 1
+[    1.979351] i2c-SS5K0008:00 supply V1P2A not found, using dummy regulator
+[    1.979467] i2c-SS5K0008:00 supply VPROG4B not found, using dummy regulator
+[    1.979614] s5k4h8yx i2c-SS5K0008:00: before s_config
+[    1.979666] s5k4h8yx i2c-SS5K0008:00: @power_up
+[    1.988598] s5k4h8yx i2c-SS5K0008:00: gpio1_ctrl set 1 ret=0
+[    2.003589] s5k4h8yx i2c-SS5K0008:00: gpio0_ctrl set 1 ret=0
+[    2.027578] s5k4h8yx 3-0010: vcm power up fail
+[    2.027644] s5k4h8yx i2c-SS5K0008:00: __s5k4h8yx_s_power on 542
+[    2.027737] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_init_config
+[    2.028483] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.029244] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.029692] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.030415] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.030852] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.031580] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.032296] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.033018] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.033454] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.034263] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.034990] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret = -121
+[    2.035039] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_write_reg_array: write error
+[    2.035481] s5k4h8yx i2c-SS5K0008:00: s5k4h8yx_i2c_write error!! ret =[    2.036952] s5k4h8yx i2c-SS5K[    2.039282] s5k4h8yx i2c-SS5K[    2.107859] s5k4h8yx: probe of i2c-SS5K0008:00 failed with error -5
+[    2.180870] t4ka3 i2c-TOSB0001:00: t4ka3_probe start build time 14:27:00
+[    2.180944] t4ka3 i2c-TOSB0001:00: gmin: initializing atomisp module subdev data.PMIC ID 1
+[    2.186237] i2c-TOSB0001:00 supply V1P2A not found, using dummy regulator
+[    2.186335] i2c-TOSB0001:00 supply VPROG4B not found, using dummy regulator
+[    2.186433] t4ka3 i2c-TOSB0001:00: before s_config
+[    2.186514] t4ka3 i2c-TOSB0001:00: @power_up
+[    2.198785] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 1 ret=0
+[    2.204786] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 1 ret=0
+[    2.224225] t4ka3 i2c-TOSB0001:00: read from offset 0x0 error -121
+[    2.224288] t4ka3 i2c-TOSB0001:00: sensor_id_high = 0x8801
+[    2.224337] t4ka3 i2c-TOSB0001:00: sensor detect failed
+[    2.226819] t4ka3 i2c-TOSB0001:00: sensor power-up failed
+[    2.226871] t4ka3 i2c-TOSB0001:00: @power_down
+[    2.226939] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 0 ret=0
+[    2.242043] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 0 ret=0
+[    2.257392] t4ka3 i2c-TOSB0001:00: @power_up
+[    2.273997] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 1 ret=0
+[    2.279857] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 1 ret=0
+[    2.299074] t4ka3 i2c-TOSB0001:00: read from offset 0x0 error -121
+[    2.299138] t4ka3 i2c-TOSB0001:00: sensor_id_high = 0x8801
+[    2.299188] t4ka3 i2c-TOSB0001:00: sensor detect failed
+[    2.302359] t4ka3 i2c-TOSB0001:00: sensor power-up failed
+[    2.302421] t4ka3 i2c-TOSB0001:00: @power_down
+[    2.302636] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 0 ret=0
+[    2.317755] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 0 ret=0
+[    2.333208] t4ka3 i2c-TOSB0001:00: @power_up
+[    2.349950] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 1 ret=0
+[    2.355712] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 1 ret=0
+[    2.375106] t4ka3 i2c-TOSB0001:00: read from offset 0x0 error -121
+[    2.375170] t4ka3 i2c-TOSB0001:00: sensor_id_high = 0x8801
+[    2.375218] t4ka3 i2c-TOSB0001:00: sensor detect failed
+[    2.377687] t4ka3 i2c-TOSB0001:00: sensor power-up failed
+[    2.377740] t4ka3 i2c-TOSB0001:00: @power_down
+[    2.377809] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 0 ret=0
+[    2.393290] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 0 ret=0
+[    2.408403] t4ka3 i2c-TOSB0001:00: @power_up
+[    2.424833] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 1 ret=0
+[    2.430513] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 1 ret=0
+[    2.449920] t4ka3 i2c-TOSB0001:00: read from offset 0x0 error -121
+[    2.449983] t4ka3 i2c-TOSB0001:00: sensor_id_high = 0x8801
+[    2.450029] t4ka3 i2c-TOSB0001:00: sensor detect failed
+[    2.453045] t4ka3 i2c-TOSB0001:00: sensor power-up failed
+[    2.453098] t4ka3 i2c-TOSB0001:00: @power_down
+[    2.453167] t4ka3 i2c-TOSB0001:00: gpio1_ctrl set 0 ret=0
+[    2.468511] t4ka3 i2c-TOSB0001:00: gpio0_ctrl set 0 ret=0
+[    2.483619] t4ka3 3-0037: cam sensor power up fail
+[    2.483686] t4ka3 i2c-TOSB0001:00: t4ka3 power-up err
+[    2.483734] t4ka3 i2c-TOSB0001:00: t4ka3_probe: configuration fail!!
+[    2.620108] ov5693 i2c-OVTI5693:00: gmin: initializing atomisp module subdev data.PMIC ID 1
+[    2.625348] i2c-OVTI5693:00 supply V1P2A not found, using dummy regulator
+[    2.625485] i2c-OVTI5693:00 supply VPROG4B not found, using dummy regulator
+[    2.672687] ov5693 i2c-OVTI5693:00: camera pdata: port: 0 lanes: 2 order: 00000002
+[    5.672342] i2c_designware 808622C1:03: controller timed out
+[    5.672865] ov5693 i2c-OVTI5693:00: read from offset 0x300a error -110
+[    5.672931] ov5693 i2c-OVTI5693:00: sensor_id_high = 0x8801
+[    5.672979] ov5693 i2c-OVTI5693:00: ov5693_detect err s_config.
+[    5.676433] ov5693 i2c-OVTI5693:00: sensor power-gating failed
+[    5.686050] usbcore: registered new interface driver snd-usb-audio
+[    5.686573] usbcore: registered new interface driver snd-usb-hiface
+[    5.688972] Codec driver version 0.3 alsa 1.0.25
+[    6.967476] snd_intel_sst: sst_platform_get_resources_edksnd_intel_sst: LPE base: 0x91e00000 size:0x200000
+[    6.967853] snd_intel_sst: IRAM base: 0x91ec0000snd_intel_sst: DRAM base: 0x91f00000
+[    6.968029] snd_intel_sst: SHIM base: 0x91f40000snd_intel_sst: Mailbox base: 0x91f44000
+[    6.968254] snd_intel_sst: DDR base: 0x20000000[    6.968856] snd_intel_sst: Enter: sst_audio_platform_init
+[    6.968908] snd_intel_sst: audio:set_cht_platform_config
+[    6.969621] snd_soc_sst_platform: sst_platform_probe deferred
+[    6.969692] platform sst-platform: Driver sst-platform requests probe deferral
+[    6.969747] snd_intel_sst: Registering machine device cht_rt5659
+[    6.970011] platform sst-platform: Direct firmware load failed with error -2
+[    6.970061] platform sst-platform: Falling back to user helper
+[    6.970792] snd_intel_sst: Requesting FW fw_sst_22a8.bin now...
+[    6.970969] intel_sst_acpi 808622A8:00: Direct firmware load failed with error -2
+[    6.971020] intel_sst_acpi 808622A8:00: Falling back to user helper
+[    6.973694] Netfilter messages via NETLINK v0.30.
+[    6.973818] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    6.974688] ctnetlink v0.93: registering with nfnetlink.
+[    6.977504] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    7.002998] tcp_probe: probe registered (port=0/fwmark=0) bufsize=4096
+[    7.003045] TCP: cubic registered
+[    7.003091] Initializing XFRM netlink socket
+[    7.004415] NET: Registered protocol family 10
+[    7.005695] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    7.007128] sit: IPv6 over IPv4 tunneling driver
+[    7.008673] NET: Registered protocol family 17
+[    7.008728] NET: Registered protocol family 15
+[    7.008840] Bluetooth: RFCOMM socket layer initialized
+[    7.008892] Bluetooth: RFCOMM ver 1.11
+[    7.008933] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    7.008983] Bluetooth: BNEP socket layer initialized
+[    7.009029] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    7.009084] Bluetooth: HIDP socket layer initialized
+[    7.009156] l2tp_core: L2TP core driver, V2.0
+[    7.009196] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    7.009947] rfkill_gpio BCM47521:00: BCM47521:00 device registered.
+[    7.010482] Key type dns_resolver registered
+[    7.016269] Loading compiled-in X.509 certificates
+[    7.016365] registered taskstats version 1
+[    7.018550] bio: create slab <bio-1> at 1
+[    7.019774] Btrfs loaded
+[    7.021784] Enter:lp855x_init
+[    7.022044] backlight enable gpio pin: 397 - 
+[    7.044758] Successfully added driver lp855x
+[    7.049604] V3P3SD: disabling
+[    7.051317] regulator-dummy: disabling
+[    7.052698] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.052772] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.052907]   Magic number: 3:974:118
+[    7.053221] acpi INT33F4:00: hash matches
+[    7.064924] bq2589x 13-006a: version reg:1d
+[    7.064983] bq2589x 13-006a: chip type:0
+[    7.121625] bq2589x_set_vindpmos: vindpm 800
+[    7.136589] bq2589x_set_vindpmos: reg01 0x8
+[    7.136648] bq2589x 13-006a: bq2589x_enable_charging
+[    7.176149] register_usb_notifier
+[    7.176419] bq2589x 13-006a: failed to register extcon notifier
+[    7.176523] bq2589x 13-006a: bq2589x_set_inlmt:1391 0
+[    7.183196] bq2589x 13-006a: bq2589x_set_inlmt:1391 900
+[    7.241610] bq2589x 13-006a: VBUS Detect timedout. Setting INLIMIT
+[    7.247622] bq2589x 13-006a: bq2589x_set_inlmt:1391 0
+[    7.251589] bq2589x 13-006a: VBUS Detect timedout. Setting INLIMIT
+[    7.269600] bq2589x 13-006a: bq2589x_set_cc:1364 1000
+[    7.313576] bq2589x 13-006a: VBUS Detect timedout. Setting INLIMIT
+[    7.318690] console [netcon0] enabled
+[    7.318758] netconsole: network logging started
+[    7.318808] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.318836] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.324217] dwc3 dwc3.0.auto: dwc3_resume_common
+[    7.325045] dwc3 dwc3.0.auto: dwc3_suspend_common
+[    7.325259] file system registered
+[    7.328856] bq2589x 13-006a: bq2589x_set_cc:1364 0
+[    7.330624] Number of LUNs=8
+[    7.330697] Mass Storage Function, version: 2009/09/11
+[    7.330744] LUN: removable file: (no medium)
+[    7.332388] android_usb gadget: android_usb ready
+[    7.337239] dwc3 dwc3.0.auto: dwc3_resume_common
+[    7.338286] dwc3 dwc3.0.auto: dwc3_suspend_common
+[    7.346752] input: gpio-keys as /devices/platform/gpio-keys.2.auto/input/input4
+[    7.347608] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.347684] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.348345] input: gpio-keys as /devices/platform/gpio-keys.3.auto/input/input5
+[    7.349168] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.349345] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.350923] atmel_mxt_ts i2c-ATML1000:00: Failed to get gpio reset
+[    7.351019] atmel_mxt_ts: probe of i2c-ATML1000:00 failed with error -22
+[    7.352175] rtc_cmos 00:0a: setting system clock to 2023-08-14 08:07:51 UTC (1692000471)
+[    7.352768] pmic_ccsm wcove_ccsm: PMIC model is 3
+[    7.357084] pmic_ccsm wcove_ccsm: External-USBPHY used
+[    7.358579] bq2589x 13-006a: bq2589x_set_cv:1380 0
+[    7.359384] pmic_ccsm wcove_ccsm: No need to split the zones!!
+[    7.385383] pmic_ccsm wcove_ccsm: No edev found
+[    7.397220] pmic_ccsm wcove_ccsm: Battery Zone changed. Current zone is 0
+[    7.399386] bq2589x 13-006a: bq2589x_set_inlmt:1391 0
+[    7.415300] pmic_ccsm wcove_ccsm: Debugfs created successfully!!
+[    7.416599] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.416668] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.416883] Enter func: tps61158_led_probe - 
+[    7.417608] TPS61158 : button backlight  brightness_set -- 0 
+[    7.417829] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.417917] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.418321] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[    7.418389] EDD information not available.
+[    7.420336] had: Vidya: Enter alsa_card_intelhad_init
+[    7.420387] had: ******** HAD DRIVER loading.. Ver: 0.01.003
+[    7.426340] [drm] mid_hdmi_audio_register: Scheduling HDMI audio work queue
+[    7.426717] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.426777] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.427115] snd_byt_driver_init: BYT-CR-RT5640 Machine driver registered.
+[    7.427357] snd_byt_driver_init: BYT-CR-RT5651 Machine driver registered.
+[    7.427399] Cherrytrail Machine Driver cht_rt5659 registerd
+[    7.427677] cht_rt5659 cht_rt5659: ASoC: CPU DAI Headset-cpu-dai not registered
+[    7.427743] snd_soc_register_card failed -517
+[    7.427809] platform cht_rt5659: Driver cht_rt5659 requests probe deferral
+[    7.428294] Cherrytrail Machine Driver cht_aic31xx registerd
+[    7.428343] dhd_module_init in
+[    7.428405] found wifi acpi device BCM4356
+[    7.428620] dhdpcie_pci_remove_device: 0000:01:00.0
+[    7.429466] PCI bridge pm runtime off: 0x8086, 0x22c8, 0000:00:1c.0
+[    7.431413] i915 0000:00:02.0: BAR 6: [??? 0x00000000 flags 0x2] has bogus alignment
+[    7.431480] pci 0000:01:00.0: BAR 2: assigned [mem 0x91000000-0x913fffff 64bit]
+[    7.431625] pci 0000:01:00.0: BAR 0: assigned [mem 0x91400000-0x91407fff 64bit]
+[    7.431917] PCI_PROBE:  bus 1, slot 0,vendor 14E4, device 43EC(good PCI location)
+[    7.431963] dhdpcie_init: found adapter info 'DHD generic adapter'
+[    7.432173] pcieh 0000:01:00.0: enabling device (0000 -> 0002)
+[    7.434201] DHD: dongle ram size is set to 786432(orig 786432) at 0x180000
+[    7.434248] wifi_platform_prealloc: failed to alloc static mem section 7
+[    7.434406] Using firmware: /system/vendor/firmware/brcm/fw_bcmdhd_4356a2_pcie.bin, nvram: /system/vendor/firmware/brcm/nvram_pcie_4356_a2.cal
+[    7.434939] CFG80211-ERROR) wl_setup_wiphy : Registering Vendor80211
+[    7.435996] wl_create_event_handler(): thread:wl_event_handler:837 started
+[    7.436010] CFG80211-ERROR) wl_event_handler : tsk Enter, tsk = 0xffff880178da19b8
+[    7.436692] dhd_attach(): thread:dhd_watchdog_thread:839 started
+[    7.436747] dhd_deferred_work_init: work queue initialized 
+[    7.437294] Dongle Host Driver, version 1.201.90 (r)
+[    7.437294] Compiled in drivers/net/wireless/bcmdhd on Aug 14 2023 at 14:53:32
+[    7.438451] Register interface [wlan0]  MAC: 00:90:4c:11:22:33
+[    7.438451] 
+[    7.438561] dhd_prot_ioctl : bus is down. we have nothing to do
+[    7.438602] dhd_bus_devreset: == Power OFF ==
+[    7.476512] bq2589x 13-006a: VBUS Detect timedout. Setting INLIMIT
+[    7.488505] POWER_SUPPLY_PROP_TYPE 4
+[    7.488549] bq2589x 13-006a: bq2589x_turn_otg_vbus 1
+[    7.539521] dhd_bus_devreset:  WLAN OFF Done
+[    7.539553] wifi_platform_set_power = 0
+[    7.539617] found wifi acpi device BCM4356
+[    7.539817] snd_soc_sst_platform: sst_platform_probe deferred
+[    7.539855] platform sst-platform: Driver sst-platform requests probe deferral
+[    7.540010] cht_rt5659 cht_rt5659: ASoC: CPU DAI Headset-cpu-dai not registered
+[    7.540058] snd_soc_register_card failed -517
+[    7.540095] platform cht_rt5659: Driver cht_rt5659 requests probe deferral
+[    7.540196] dhd_module_init out
+[    7.540240] ALSA device list:
+[    7.540279]   #0: Dummy 1
+[    7.540329]   #1: 
+[    7.542344] Freeing unused kernel memory: 1100K (ffffffff82a24000 - ffffffff82b37000)
+[    7.636504] intel-cht-otg intel-cht-otg.0: USB_EVENT_ID id ground
+[    7.640974] dwc3 dwc3.0.auto: dwc3_resume_common
+[    7.641660] dwc3 dwc3.0.auto: dwc3_suspend_common
+[    7.729472] pmic_ccsm wcove_ccsm: USB VBUS Detected. Notifying OTG driver
+[    7.743085] pmic_ccsm wcove_ccsm: USB VBUS Detected. Notifying OTG driver
+[    7.759199] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    7.760057] trigger_algo:Algo_status:2
+[    7.803466] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    7.818812] a3:01: 0x40 0x08 0x19 0x18 0x00 0x71 0x02 0x8d 0x03 0x44 0x70 0x02 0x00 0x11 0x55 0x55 0x3f 0x19 0x00 0x00 0x1d 
+[    7.872483] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    7.897755] init: init first stage started!
+[    7.905170] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    7.946226] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    7.947084] audit: type=1403 audit(1692000472.094:2): policy loaded auid=4294967295 ses=4294967295
+[    7.947240] trigger_algo:Algo_status:2
+[    7.947867] init: (Initializing SELinux non-enforcing took 0.05s.)
+[    7.953138] init: init second stage started!
+[    7.959145] init: Running restorecon...
+[    7.974416] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    8.000677] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    8.017707] init: waitpid failed: No child processes
+[    8.018041] init: (Loading properties from /default.prop took 0.00s.)
+[    8.019423] init: (Parsing /init.environ.rc took 0.00s.)
+[    8.019713] init: (Parsing /init.usb.rc took 0.00s.)
+[    8.020952] init: (Parsing /init.latte.rc took 0.00s.)
+[    8.021480] init: (Parsing /init.usb.configfs.rc took 0.00s.)
+[    8.021565] init: (Parsing /init.zygote32.rc took 0.00s.)
+[    8.021916] init: ignored duplicate definition of service 'bugreport'init: (Parsing /init.cm.rc took 0.00s.)
+[    8.022063] init: (Parsing /init.rc took 0.00s.)
+[    8.022495] init: Starting service 'ueventd'...
+[    8.022842] audit: type=1400 audit(1692000472.170:3): avc:  denied  { mounton } for  pid=1 comm="init" path="/proc/sys/fs/binfmt_misc" dev="proc" ino=10368 scontext=u:r:init:s0 tcontext=u:object_r:proc:s0 tclass=dir permissive=1
+[    8.023007] init: write_file: Unable to open '/proc/sys/kernel/panic_on_stackoverflow': No such file or directory
+[    8.023456] init: Waiting for /dev/.coldboot_done...
+[    8.024296] ueventd: ueventd started!
+[    8.027044] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    8.068498] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    8.104774] get_battery_status: get_battery_status Set status=2 vbus good 0 for battery
+[    8.418900] ueventd: Coldboot took 0.39s.
+[    8.423351] init: Waiting for /dev/.coldboot_done took 0.40s.
+[    8.423465] init: Failed to read from /dev/hw_random: No such device
+[    8.423545] keychord: using input dev Power Button for fevent
+[    8.423576] keychord: using input dev Power Button for fevent
+[    8.424323] keychord: using input dev gpio-keys for fevent
+[    8.424365] keychord: using input dev gpio-keys for fevent
+[    8.462507] audit: type=1400 audit(1692000472.610:4): avc:  denied  { create } for  pid=1 comm="init" name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+[    8.464194] init: write_file: Unable to open '/proc/cpu/alignment': No such file or directory
+[    8.471535] init: write_file: Unable to open '/proc/sys/abi/swp': No such file or directory
+[    8.473482] init: Failed to read from /dev/hw_random: No such device
+[    8.514726] init: Starting service 'battery-config'...
+[    8.515168] init: cannot setexeccon('u:r:efiprop:s0'): Invalid argument
+[    8.515514] fs_mgr: Warning: unknown flag reservedsize=128M
+[    8.527733] EXT4-fs (mmcblk0p11): mounted filesystem with ordered data mode. Opts: (null)
+[    8.527958] fs_mgr: __mount(source=/dev/block/by-name/android_system,target=/system,type=ext4)=0
+[    8.533217] fs_mgr: check_fs(): mount(/dev/block/by-name/android_cache,/cache,ext4)=-1: No such file or directory
+[    8.535010] fs_mgr: Running /system/bin/e2fsck on /dev/block/by-name/android_cache
+[    8.559636] random: nonblocking pool is initialized
+[    8.625205] audit: type=1400 audit(1692000472.772:5): avc:  denied  { read } for  pid=2817 comm="e2fsck" name="mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    8.625445] audit: type=1400 audit(1692000472.773:6): avc:  denied  { open } for  pid=2817 comm="e2fsck" path="/dev/block/mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    8.625636] audit: type=1400 audit(1692000472.773:7): avc:  denied  { write } for  pid=2817 comm="e2fsck" name="mmcblk0p12" dev="tmpfs" ino=10408 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    8.625748] audit: type=1400 audit(1692000472.773:8): avc:  denied  { ioctl } for  pid=2817 comm="e2fsck" path="/dev/block/mmcblk0p12" dev="tmpfs" ino=10408 ioctlcmd=127c scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    8.683822] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    8.683822] 
+[    8.683914] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    8.683914] 
+[    8.683965] e2fsck: Pass 2: Checking directory structure
+[    8.683965] 
+[    8.684014] e2fsck: Pass 3: Checking directory connectivity
+[    8.684014] 
+[    8.684065] e2fsck: Pass 4: Checking reference counts
+[    8.684065] 
+[    8.684117] e2fsck: Pass 5: Checking group summary information
+[    8.684117] 
+[    8.684170] e2fsck: /dev/block/by-name/android_cache: 18/16384 files (0.0% non-contiguous), 2128/65536 blocks
+[    8.684170] 
+[    8.688428] EXT4-fs (mmcblk0p12): mounted filesystem with ordered data mode. Opts: errors=panic
+[    8.688606] fs_mgr: __mount(source=/dev/block/by-name/android_cache,target=/cache,type=ext4)=0
+[    8.691767] EXT4-fs (mmcblk0p13): Ignoring removed nomblk_io_submit option
+[    8.694698] EXT4-fs (mmcblk0p13): warning: maximal mount count reached, running e2fsck is recommended
+[    8.697344] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    8.697513] fs_mgr: check_fs(): mount(/dev/block/by-name/android_data,/data,ext4)=0: Success
+[    8.703178] fs_mgr: check_fs(): unmount(/data) succeeded
+[    8.703315] fs_mgr: Running /system/bin/e2fsck on /dev/block/by-name/android_data
+[    9.016295] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    9.016295] 
+[    9.016385] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    9.016385] 
+[    9.016486] e2fsck: Pass 2: Checking directory structure
+[    9.016486] 
+[    9.016554] e2fsck: Pass 3: Checking directory connectivity
+[    9.016554] 
+[    9.016614] e2fsck: Pass 4: Checking reference counts
+[    9.016614] 
+[    9.016676] e2fsck: Pass 5: Checking group summary information
+[    9.016676] 
+[    9.016740] e2fsck: /dev/block/by-name/android_data: 17/1728512 files (0.0% non-contiguous), 330674/6888192 blocks
+[    9.016740] 
+[    9.024327] EXT4-fs (mmcblk0p13): mounted filesystem with ordered data mode. Opts: discard,noauto_da_alloc,errors=panic
+[    9.024548] fs_mgr: __mount(source=/dev/block/by-name/android_data,target=/data,type=ext4)=0
+[    9.031333] EXT4-fs (mmcblk0p1): Ignoring removed nomblk_io_submit option
+[    9.034686] EXT4-fs (mmcblk0p1): warning: mounting unchecked fs, running e2fsck is recommended
+[    9.036147] EXT4-fs (mmcblk0p1): mounted filesystem without journal. Opts: errors=remount-ro,nomblk_io_submit
+[    9.036248] SELinux:  Context u:object_r:persist_file:s0 is not valid (left unmapped).
+[    9.036406] fs_mgr: check_fs(): mount(/dev/block/by-name/android_persistent,/persist,ext4)=0: Success
+[    9.041105] fs_mgr: check_fs(): unmount(/persist) succeeded
+[    9.041155] fs_mgr: Running /system/bin/e2fsck on /dev/block/by-name/android_persistent
+[    9.062978] audit: type=1400 audit(1692000473.210:9): avc:  denied  { dac_override } for  pid=2830 comm="e2fsck" capability=1  scontext=u:r:fsck:s0 tcontext=u:r:fsck:s0 tclass=capability permissive=1
+[    9.074459] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    9.074459] 
+[    9.074528] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    9.074528] 
+[    9.074568] e2fsck: Pass 2: Checking directory structure
+[    9.074568] 
+[    9.074631] e2fsck: Pass 3: Checking directory connectivity
+[    9.074631] 
+[    9.074682] e2fsck: Pass 4: Checking reference counts
+[    9.074682] 
+[    9.074733] e2fsck: Pass 5: Checking group summary information
+[    9.074733] 
+[    9.074784] e2fsck: _/data: 12/448 files (0.0% non-contiguous), 40/1792 blocks
+[    9.074784] 
+[    9.074845] e2fsck: e2fsck terminated by exit(1)
+[    9.074845] 
+[    9.078534] EXT4-fs (mmcblk0p1): mounted filesystem without journal. Opts: errors=panic
+[    9.078654] fs_mgr: __mount(source=/dev/block/by-name/android_persistent,target=/persist,type=ext4)=0
+[    9.080523] EXT4-fs (mmcblk0p2): Ignoring removed nomblk_io_submit option
+[    9.081483] EXT4-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
+[    9.082446] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    9.082562] fs_mgr: check_fs(): mount(/dev/block/by-name/android_config,/config,ext4)=0: Success
+[    9.089619] fs_mgr: check_fs(): unmount(/config) succeeded
+[    9.089667] fs_mgr: Running /system/bin/e2fsck on /dev/block/by-name/android_config
+[    9.106306] e2fsck: e2fsck 1.42.9 (28-Dec-2013)
+[    9.106306] 
+[    9.106360] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    9.106360] 
+[    9.106401] e2fsck: Pass 2: Checking directory structure
+[    9.106401] 
+[    9.106451] e2fsck: Pass 3: Checking directory connectivity
+[    9.106451] 
+[    9.106502] e2fsck: Pass 4: Checking reference counts
+[    9.106502] 
+[    9.106553] e2fsck: Pass 5: Checking group summary information
+[    9.106553] 
+[    9.106605] e2fsck: /dev/block/by-name/android_config: 13/512 files (0.0% non-contiguous), 1074/2048 blocks
+[    9.106605] 
+[    9.108976] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: errors=panic
+[    9.109097] fs_mgr: __mount(source=/dev/block/by-name/android_config,target=/config,type=ext4)=0
+[    9.112682] EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: (null)
+[    9.112787] fs_mgr: __mount(source=/dev/block/by-name/android_factory,target=/factory,type=ext4)=0
+[    9.114307] init: (Parsing /system/etc/init/atrace.rc took 0.00s.)
+[    9.114614] init: (Parsing /system/etc/init/audioserver.rc took 0.00s.)
+[    9.114873] init: (Parsing /system/etc/init/bootanim.rc took 0.00s.)
+[    9.115160] init: (Parsing /system/etc/init/bootstat.rc took 0.00s.)
+[    9.115434] init: (Parsing /system/etc/init/cameraserver.rc took 0.00s.)
+[    9.115689] init: (Parsing /system/etc/init/debuggerd.rc took 0.00s.)
+[    9.115945] init: (Parsing /system/etc/init/debuggerd64.rc took 0.00s.)
+[    9.116233] init: (Parsing /system/etc/init/drmserver.rc took 0.00s.)
+[    9.116538] init: (Parsing /system/etc/init/dumpstate.rc took 0.00s.)
+[    9.116790] init: (Parsing /system/etc/init/gatekeeperd.rc took 0.00s.)
+[    9.117075] init: (Parsing /system/etc/init/init-debug.rc took 0.00s.)
+[    9.117335] init: (Parsing /system/etc/init/installd.rc took 0.00s.)
+[    9.117588] init: (Parsing /system/etc/init/keystore.rc took 0.00s.)
+[    9.117840] init: (Parsing /system/etc/init/lmkd.rc took 0.00s.)
+[    9.118202] init: (Parsing /system/etc/init/logcatd.rc took 0.00s.)
+[    9.118501] init: (Parsing /system/etc/init/logd.rc took 0.00s.)
+[    9.118765] init: (Parsing /system/etc/init/mdnsd.rc took 0.00s.)
+[    9.119028] init: (Parsing /system/etc/init/mediacodec.rc took 0.0[    9.119543] init: (Parsing /s[    9.122776] init: Service 'ba[    9.170654] audit: type=1400 audit(1692000473.318:10): avc:  denied  { read write } for  pid=2839 comm="mkswap" name="zram0" dev="tmpfs" ino=846 scontext=u:r:toolbox:s0 tcontext=u:object_r:ram_device:s0 tclass=blk_file permissive=1
+[    9.170708] audit: type=1400 audit(1692000473.318:11): avc:  denied  { open } for  pid=2839 comm="mkswap" path="/dev/block/zram0" dev="tmpfs" ino=846 scontext=u:r:toolbox:s0 tcontext=u:object_r:ram_device:s0 tclass=blk_file permissive=1
+[    9.175360] Adding 524284k swap on /dev/block/zram0.  Priority:-1 extents:1 across:524284k SS
+[    9.178643] init: property_set("ro.sf.lcd_density", "320") fai[    9.180770] init: Starting se[    9.217210] logd.auditd: start
+[    9.217272] logd.klogd: 9215118117
+[    9.520650] SELinux:  Context u:object_r:config_file:s0 is not valid (left unmapped).
+[    9.520746] SELinux:  Context u:object_r:wlan_prov_data_file:s0 is not valid (left unmapped).
+[    9.521531] init: cannot find '/system/bin/dhcpcd' (No such file or directory), disabling 'dhcpcd_eth0'
+[    9.523797] init: insmod: open("/system/lib/modules/snd-soc-tfa98xx.ko") failed: No such file or directoryinit: insmod: open("/system/lib/modules/atmel_mxt_ts.ko") failed: No such file or directoryinit: write_file: Unable to open '/sys/fs/cgroup/cpuset/cgroup.clone_children': No such file or directory
+[    9.524264] type=1400 audit(1692000473.672:14): avc: denied { write } for pid=1 comm="init" name="cgroup" dev="sysfs" ino=3 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    9.524332] type=1400 audit(1692000473.672:15): avc: denied { add_name } for pid=1 comm="init" name="cpuset" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    9.524402] init: write_file: Unable to open '/sys/fs/cgroup/cpuset/power_hal/cgroup.clone_children': No such file or directory
+[    9.524428] type=1400 audit(1692000473.672:16): avc: denied { create } for pid=1 comm="init" name="cpuset" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    9.524565] init: write_file: Unable to open '/sys/fs/cgroup/cpuset/power_hal/non_interactive/cgroup.clone_children': No such file or directory
+[    9.525758] init: Starting service 'boot_logcat'...
+[    9.527298] init: Starting service 'debuggerd'...
+[    9.527723] init: Starting service 'debuggerd64'...
+[    9.528202] init: Starting service 'vold'...
+[    9.529314] init: Not bootcharting.
+[    9.700554] type=1400 audit(1692000473.848:17): avc: denied { dac_override } for pid=2848 comm="logcat" capability=1 scontext=u:r:logd:s0 tcontext=u:r:logd:s0 tclass=capability permissive=1
+[    9.700940] type=1400 audit(1692000473.848:18): avc: denied { write } for pid=2848 comm="logcat" name="/" dev="mmcblk0p12" ino=2 scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=dir permissive=1
+[    9.701017] type=1400 audit(1692000473.848:19): avc: denied { add_name } for pid=2848 comm="logcat" name="logcat.log" scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=dir permissive=1
+[    9.701110] type=1400 audit(1692000473.848:20): avc: denied { create } for pid=2848 comm="logcat" name="logcat.log" scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=file permissive=1
+[    9.701383] type=1400 audit(1692000473.849:21): avc: denied { append open } for pid=2848 comm="logcat" path="/cache/logcat.log" dev="mmcblk0p12" ino=11 scontext=u:r:logd:s0 tcontext=u:object_r:cache_file:s0 tclass=file permissive=1
+[    9.752005] fs_mgr: Warning: unknown flag reservedsize=128M
+[    9.787991] init: Starting service 'exec 1 (/system/bin/tzdatacheck)'...
+[    9.819107] init: Service 'exec 1 (/system/bin/tzdatacheck)' (pid 2904) exited with status 0
+[    9.824176] fs_mgr: Warning: unknown flag reservedsize=128M
+[    9.825272] zram: Cannot change disksize for initialized device
+[    9.833370] fs_mgr: swapon failed for /dev/block/zram0
+[    9.833500] init: write_file: Unable to open '/sys/block/dm-0/queue/read_ahead_kb': No such file or directory
+[    9.833549] init: write_file: Unable to open '/sys/block/dm-1/queue/read_ahead_kb': No such file or directory
+[    9.835173] init: Starting service 'sysinit'...
+[    9.835878] init: (Loading properties from /data/local.prop took 0.00s.)
+[    9.836164] init: Starting service 'logd-reinit'...
+[    9.838268] init: Starting service 'healthd'...
+[    9.838520] init: Starting service 'watchdogd'...
+[    9.838963] init: Service rfkill_bt does not have a SELinux domain defined.
+[    9.839005] init: Starting service 'rfkill_bt'...
+[    9.839496] init: Service keymaster_meid does not have a SELinux domain defined.
+[    9.839539] init: Starting service 'keymaster_meid'...
+[    9.839975] watchdogd: started (interval 10, margin 30)!
+[    9.840147] iTCO_wdt: iTCO_wdt_ping
+[    9.840186] iTCO_wdt: iTCO_wdt_ping
+[    9.840992] type=1400 audit(1692000473.988:22): avc: denied { execute_no_trans } for pid=2910 comm="init" path="/system/bin/sh" dev="mmcblk0p11" ino=32903 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[    9.841360] type=1400 audit(1692000473.988:23): avc: denied { create } for pid=2911 comm="init" name="keymaster_mei" scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    9.841376] init: Service intel_prop does not have a SELinux domain defined.
+[    9.841382] init: Starting service 'intel_prop'...
+[    9.841700] type=1400 audit(1692000473.988:24): avc: denied { setattr } for pid=2911 comm="init" name="keymaster_mei" dev="tmpfs" ino=10915 scontext=u:r:init:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1
+[    9.841817] init: Starting service 'lmkd'...
+[    9.842347] init: Starting service 'servicemanager'...
+[    9.842832] init: Starting service 'surfaceflinger'...
+[    9.843217] init: write_file: Unable to open '/sys/devices/platform/INT33BB:00/power/control': No such file or directory
+[    9.843323] init: write_file: Unable to write to '/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor': Invalid argument
+[    9.843395] init: write_file: Unable to write to '/sys/devices/system/cpu/cpu1/cpufreq/scaling_governor': Invalid argument
+[    9.843462] init: write_file: Unable to write to '/sys/devices/system/cpu/cpu2/cpufreq/scaling_governor': Invalid argument
+[    9.843528] init: write_file: Unable to write to '/sys/devices/system/cpu/cpu3/cpufreq/scaling_governor': Invalid argument
+[    9.844194] init: Service atomisp-init does not have a SELinux domain defined.
+[    9.844235] init: Starting service 'atomisp-init'...
+[    9.844604] init: insmod: open("/system/lib/modules/iptable_raw.ko") failed: No such file or directoryinit: insmod: open("/system/lib/modules/ip6table_raw.ko") failed: No such file or directoryinit: insmod: open("/system/lib/modules/6lowpan_iphc.ko") failed: No such file or directoryinit: insmod: open("/system/lib/modules/bcm_bt_lpm.ko") failed: No such file or directory
+[    9.845918] hid_sensor_hub: Unknown symbol senscol_usage_to_name (err 0)
+[    9.846009] hid_sensor_hub: Unknown symbol add_data_field (err 0)
+[    9.846110] hid_sensor_hub: Unknown symbol push_sample (err 0)
+[    9.846153] hid_sensor_hub: Unknown symbol remove_senscol_sensor (err 0)
+[    9.846194] hid_sensor_hub: Unknown symbol senscol_reset_notify (err 0)
+[    9.846249] hid_sensor_hub: Unknown symbol senscol_send_ready_event (err 0)
+[    9.846296] hid_sensor_hub: Unknown symbol alloc_senscol_sensor (err 0)
+[    9.846347] hid_sensor_hub: Unknown symbol init_senscol_sensor (err 0)
+[    9.846396] hid_sensor_hub: Unknown symbol add_sens_property (err 0)
+[    9.846447] hid_sensor_hub: Unknown symbol senscol_get_modifier (err 0)
+[    9.846498] hid_sensor_hub: Unknown symbol add_senscol_sensor (err 0)
+[    9.846550] hid_sensor_hub: Unknown symbol add_senscol_impl (err 0)
+[    9.846642] init: finit_module for "/system/lib/modules/hid-sensor-hub.ko" failed: No such file or directory
+[    9.847402] hid_sensor_accel_3d: Unknown symbol sensor_hub_remove_callback (err 0)
+[    9.847492] hid_sensor_accel_3d: Unknown symbol hid_sensor_remove_trigger (err 0)
+[    9.847[    9.850185] hid_sensor_gyro_3[    9.852966] hid_sensor_magn_3[    9.874433] binder: 2908:2908 transaction failed 29189, size 0-0
+[   10.059248] type=1400 audit(1692000474.206:29): avc: denied { setattr } for pid=2923 comm="chown" name="type" dev="sysfs" ino=13202 scontext=u:r:toolbox:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   10.059471] type=1400 audit(1692000474.206:30): avc: denied { chown } for pid=2923 comm="chown" capability=0 scontext=u:r:toolbox:s0 tcontext=u:r:toolbox:s0 tclass=capability permissive=1
+[   10.112677] type=1400 audit(1692000474.260:31): avc: denied { getattr } for pid=2915 comm="surfaceflinger" path="/dev/dri/card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   10.112863] type=1400 audit(1692000474.260:32): avc: denied { read write } for pid=2915 comm="surfaceflinger" name="card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   10.112939] type=1400 audit(1692000474.260:33): avc: denied { open } for pid=2915 comm="surfaceflinger" path="/dev/dri/card0" dev="tmpfs" ino=776 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   10.113486] type=1400 audit(1692000474.260:34): avc: denied { ioctl } for pid=2915 comm="surfaceflinger" path="/dev/dri/card0" dev="tmpfs" ino=776 ioctlcmd=6400 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   10.137919] type=1400 audit(1692000474.285:35): avc: denied { write } for pid=2915 comm="surfaceflinger" name="i915_videostatus" dev="sysfs" ino=10858 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   14.857747] init: Service 'sysinit' (pid 2906) exited with status 0
+[   14.858155] init: Service 'logd-reinit' (pid 2907) exited with status 0
+[   14.858273] init: Service 'rfkill_bt' (pid 2910) exited with status 0
+[   14.858336] init: Service 'intel_prop' (pid 2912) exited with status 0
+[   14.858825] init: Service 'surfaceflinger' (pid 2915) killed by signal 11
+[   14.858907] init: Service 'surfaceflinger' (pid 2915) killing any children in process group
+[   14.859837] init: Starting service 'zygote'...
+[   14.860668] init: Service 'atomisp-init' (pid 2916) exited with status 127
+[   14.879932] init: Starting service 'surfaceflinger'...
+[   14.881228] init: insmod: open("/system/lib/modules/cfg80211.ko") failed: No such file or directoryinit: insmod: open("/system/lib/modules/bcmdhd.ko") failed: No such file or directory
+[   14.996238] android_usb: already disabled
+[   14.996488] android_usb: selecting functions: adb
+[   14.996595] android_usb: enabling function ffs
+[   14.996663] init: insmod: open("/system/lib/modules/rfkill-gpio.ko") failed: No such file or directoryinit: Service rfkill-init does not have a SELinux domain defined.
+[   14.996894] init: Starting service 'rfkill-init'...
+[   15.006164] type=1400 audit(1692000479.152:36): avc: denied { execute_no_trans } for pid=2969 comm="init" path="/system/bin/sh" dev="mmcblk0p11" ino=32903 scontext=u:r:init:s0 tcontext=u:object_r:shell_exec:s0 tclass=file permissive=1
+[   15.022448] [heci-ish]: ish_probe():+++ [Build 0195-fix-recv-hid-hw-reset]
+[   15.022489] [heci-ish] ish_probe() running on CHT Kx/Cx revision [20]
+[   15.022884] [heci-ish]: success Tx FIFO allocations
+[   15.023428] type
